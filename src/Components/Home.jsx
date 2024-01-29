@@ -1,25 +1,20 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types'; 
 import '../CSS/Home.css'
-const Home = () =>
+import '../App.css'
+const Home = (props) =>
 {
+  Home.propTypes =
+  {
+    animateCircle:PropTypes.bool.isRequired
+  }
     // Animate circle state variable
-    const[animateCircle,setAnimateCircle] = useState(false)
-
-    useEffect(() =>
-    {
-        // TimeOut for 
-        const timeoutId = setTimeout(() =>
-        {
-            setAnimateCircle(true);
-        },1000);
-
-        return () => clearTimeout(timeoutId)
-    },[])
+    
     return(
         // Home Container
-        <div className={`home-container ${animateCircle ? 'animate-circle' : ''}`}>
+        <div className={`home-container ${props.animateCircle ? 'animate-circle' : ''}`}>
         <div className="company-name-container"> {/* Company name container*/}
-          <h1 className={`company-name ${animateCircle ? 'animate-text' : ''}`}>DURADARS</h1>
+          <h1 className={`company-name ${props.animateCircle ? 'animate-text' : ''}`}>DURADARS</h1>
         </div>
       </div>
       )}
