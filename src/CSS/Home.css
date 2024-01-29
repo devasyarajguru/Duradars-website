@@ -1,0 +1,56 @@
+/* Home.css */
+
+.home-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #b3245c;
+  }
+  
+  .company-name-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure the company name is above the circle */
+  }
+  
+  .company-name {
+    color: #ffffff; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 2em;
+    font-weight: 800; 
+    line-height: 72px; 
+    margin: 0 0 24px; 
+    text-align: center; 
+    text-transform: uppercase;
+    transition: font-size 1.5s ease-in-out , color 1.5s ease-in-out;
+  }
+  
+  /* Circular clip path animation */
+  .home-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: #ffffff; /* Change to your desired background color */
+    border-radius: 50%;
+    transition: width 1s ease-in-out, height 1s ease-in-out;
+  }
+  
+  .home-container.animate-circle::after {
+    width: 200vw;
+    height: 200vh;
+  }
+
+  .home-container.animate-circle .company-name
+  {
+    font-size: 4em;
+    color:#b3245c;
+    transition: font-size 1.5s ease-in-out, color 1.5s ease-in-out
+  }
+
+  
