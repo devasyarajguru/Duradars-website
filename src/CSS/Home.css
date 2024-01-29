@@ -41,16 +41,6 @@
     transition: width 1s ease-in-out, height 1s ease-in-out;
   }
   
-  .home-container.animate-circle::after {
-    width: 200vw;
-    height: 200vh;
-  }
-
-  .home-container.animate-circle .company-name
-  {
-    font-size: 4em;
-    color:#b3245c;
-    transition: font-size 1.5s ease-in-out, color 1.5s ease-in-out
-  }
+  
 
   
