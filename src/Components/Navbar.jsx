@@ -1,29 +1,17 @@
 // Navbar.js
 import Logo2 from "../assets/image2.png"
-
-
 import { Link } from 'react-router-dom';
 import '../CSS/Navbar.css';
-
-
 import PropTypes from 'prop-types'; 
-import { useEffect } from 'react';
 
-const Navbar = (props) => {
+const Navbar = () => {
   Navbar.propTypes =
   {
     animateCircle:PropTypes.bool.isRequired
   }
 
-  useEffect(() =>
-  {
-    if(props.animateCircle)
-    {
-      document.querySelector('.navbar').classList.add('show-navbar')
-    }
-  },[props.animateCircle])
   return (
-    <nav className={`navbar ${props.animateCircle ? 'show-navbar' : ""}`}>
+    <nav className="navbar">
       <div className='logo-container'>
           <img src={Logo2} alt="Logo1" className="logo"/>
         </div>
