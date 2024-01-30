@@ -13,5 +13,6 @@
   {
     font-size: 4em;
     color:#b3245c;
-    transition: font-size 1.5s ease-in-out, color 1.5s ease-in-out
+    transition: font-size 1.5s ease-in-out, color 1.5s ease-in-out;
+    display:none
   }
