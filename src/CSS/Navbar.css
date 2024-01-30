@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
 .navbar {
+    display:none;
     background-color: #b3245c; 
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: relative;
+    z-index: 10;
   }
   
   .nav-list {
@@ -21,12 +27,13 @@
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .nav-list li a:hover{
+    color:#4cd0c1;
   }
   
-  /* .nav-list li a:hover {
-    color: green; 
-  } */
-
 .logo
 {
     width:100%;
