@@ -2,7 +2,7 @@ const AboutUs = () =>
 {
     return(
         <div>
-            Heyy22
+            Heyy22sjdkfjs
         </div>
     )
 }
