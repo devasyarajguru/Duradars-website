@@ -6,11 +6,12 @@
     height: 100vh;
     overflow: hidden;
     background-color: #b3245c;
+    
   }
   
   .company-name-container {
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2; 
@@ -37,7 +38,7 @@
     transform: translate(-50%, -50%);
     width: 0;
     height: 0;
-    background-color: #ffffff; /* Change to your desired background color */
+    background-color: #ffffff; 
     border-radius: 50%;
     transition: width 1s ease-in-out, height 1s ease-in-out;
   }
@@ -83,7 +84,7 @@
 
 /* Additional styling for the hero image container */
 .hero-image {
-  position: fixed;
+  position: absolute;
   top: 50%;
   right: 0;
   transform: translate(0, -50%);
@@ -122,16 +123,24 @@
   cursor: pointer;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .custom-button:hover
 {
   background-color:#a21e53;
   font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
 }
 
 .svg-image
 {
   width:500px;
   height:auto;
+}
+
+.about-home{
+  background:red;
+  margin-top:100px;
 }
