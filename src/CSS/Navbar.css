@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 
 .navbar {
-    display:none;
     background-color: #b3245c; 
     padding: 10px;
     display: flex;
@@ -28,6 +27,7 @@
     font-size: 18px;
     transition: color 0.3s ease-in-out;
     font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.3s, color 0.3s
   }
 
   .nav-list li a:hover{
@@ -40,4 +40,17 @@
     height:auto;
     max-width:200px;
     float:left;
+}
+
+.nav-list li:nth-child(2) a {
+  background-color: white;
+  padding: 8px 16px; 
+  color: #b3245c;
+  border-radius: 4px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list li:nth-child(2) a:hover{
+  background-color:#b3245c;
+  color:white;
 }
