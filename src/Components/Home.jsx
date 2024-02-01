@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import '../CSS/Home.css'
 import '../App.css'
 import AboutHome from './AboutHome';
-import '../CSS/AboutHome.css'
+import ServiceHome from './ServiceHome';
+import Why from './Why';
 const Home = (props) =>
 {
   Home.propTypes =
@@ -56,6 +57,8 @@ const Home = (props) =>
         <>
         <div>
           <AboutHome />
+          <ServiceHome />
+          <Why />
         </div>
         </>
       )}
