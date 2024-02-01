@@ -1,4 +1,5 @@
 import Fade from 'react-reveal/Fade';
+import '../CSS/AboutHome.css'
 import About1 from "../assets/about1.jpg"
 import About2 from "../assets/about2.jpg"
 import About3 from "../assets/about3.jpg"
@@ -7,7 +8,7 @@ import { Link } from 'react-router-dom';
 const AboutHome = () => {
 
     return (
-      <Fade bottom distance="20%"  duration={1500}>
+      <Fade bottom distance="30%"  duration={2500}>
         {/* About Us Container */}
       <div className="about-us-container">
         {/* Image Stack Container */}
