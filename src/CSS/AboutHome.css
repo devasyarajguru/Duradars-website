@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 50px;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
 }
 
 .about-us-content {
@@ -17,7 +17,6 @@
 }
 
 .about-us-content h2 {
-  color: #333; 
   font-size: 1.3em;
   margin-bottom: 10px;
   /* color:#4cd0c1; */
@@ -85,13 +84,13 @@
 /* Learn More Button */
 .learn-more-button {
   background-color: #4cd0c1;
-  color: #fff; 
-  padding: 10px 20px; 
-  font-size: 1em; 
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; 
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   text-decoration:none;
 }
 
