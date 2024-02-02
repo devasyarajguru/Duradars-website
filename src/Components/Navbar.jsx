@@ -2,14 +2,8 @@
 import Logo2 from "../assets/image2.png"
 import { Link } from 'react-router-dom';
 import '../CSS/Navbar.css';
-import PropTypes from 'prop-types'; 
 
 const Navbar = () => {
-  Navbar.propTypes =
-  {
-    animateCircle:PropTypes.bool.isRequired
-  }
-
   return (
     <nav className="navbar">
       <div className='logo-container'>
