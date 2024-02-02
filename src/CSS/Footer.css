@@ -1,0 +1,94 @@
+/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.footer-container {
+  background-color: #b3245c;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.logo-container{
+  padding:10px;
+  width:400px;
+  display:flex;
+  flex-direction:column;
+}
+
+.logo-container p{
+  margin-top:20px;
+  font-family: 'Open Sans', sans-serif;
+  text-align:left;
+}
+
+.footer-nav,
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+  padding:10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600; 
+}
+
+.footer-nav a:hover{
+  color:#4cd0c1;
+  transition: background-color 0.3s, color 0.3s
+}
+
+.footer-nav a {
+  padding:5px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  padding:10px;
+}
+
+.footer-icons
+{
+  margin-right:5px;
+  margin-bottom:-5px;
+  font-size:1.2rem;
+}
+
+.copyright
+{
+  background-color:#b3245c;
+  color:white;
+  text-align:center;
+  font-family: 'Open Sans', sans-serif;
+  padding:10px;
+}
+
+.cta
+{
+  margin-top:20px;
+  margin-left:10px;
+}
+
+.footer-btn{
+  background-color: white;
+  color: #b3245c;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  font-weight:600;
+}
+
+.footer-btn:hover{
+  background-color: #b3245c;
+  color:#4cd0c1;
+  font-family: 'Open Sans', sans-serif;
+}

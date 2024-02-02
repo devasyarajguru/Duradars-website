@@ -1,59 +1,37 @@
 /* Home.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-.home-container {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #b3245c;
-    
-  }
-  
-  .company-name-container {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; 
-  }
+.main-home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 
-  .company-name {
-    color: #ffffff; 
-    font-family: 'Raleway',sans-serif; 
-    font-size: 2em;
-    font-weight: 800; 
-    line-height: 72px; 
-    margin: 0 0 24px; 
-    text-align: center; 
-    text-transform: uppercase;
-    transition: font-size 1.5s ease-in-out , color 1.5s ease-in-out;
-  }
-  
-  /* Circular clip path animation */
-  .home-container::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    background-color: #ffffff; 
-    border-radius: 50%;
-    transition: width 1s ease-in-out, height 1s ease-in-out;
-  }
+.content-container{
+  display:flex;
+}
+
+.content-container-wrapper{
+  margin-top:150px;
+  margin-bottom:100px;
+}
+
+.hero-section-content{
+  margin-top:30px;
+}
 
   .slide-left {
     width: 100%;
-    animation: 3s slide-left forwards;
+    animation: 1s slide-left forwards;
   }
 
   @keyframes slide-left {
     from {
-      margin-left: 0%;
+      margin-left: -15%;
     }
     to {
-      margin-left: -45%;
+      margin-left: -5%;
     }
   }
 
@@ -70,25 +48,18 @@
 }
 
 .slide-right {
-  animation: 3s slide-right forwards;
+  animation: 1s slide-right forwards;
 }
 
 @keyframes slide-right {
   from {
-    margin-left: 0%;
+    margin-left: 15%;
   }
   to {
-    margin-left: 45%; 
+    margin-left: 5%; 
   }
 }
 
-/* Additional styling for the hero image container */
-.hero-image {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
-}
 
 .tagline {
   color:#333c43;
@@ -105,11 +76,6 @@
   line-height: 1.4rem;
   color: #475056; 
   font-family: 'Open Sans', sans-serif;
-}
-
-.span-head
-{
-  color:#b3245c;
 }
 
 .custom-button {
