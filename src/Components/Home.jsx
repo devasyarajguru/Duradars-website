@@ -1,69 +1,65 @@
-import { useState, useEffect } from 'react';
-import CyberImage from "../assets/cyber-image.jpg"
-import PropTypes from 'prop-types'; 
-import '../CSS/Home.css'
-import '../App.css'
-import AboutHome from './AboutHome';
-import ServiceHome from './ServiceHome';
+import PropTypes from "prop-types";
+import AboutHome from './AboutSec';
+import ServiceSec from './ServiceSec';
 import Why from './Why';
-const Home = (props) =>
+import { Link } from 'react-router-dom';
+import '../CSS/Home.css'
+const Home = ({taglineJSX, taglineText , paragraph , image}) =>
 {
-  Home.propTypes =
-  {
-    animateCircle:PropTypes.bool.isRequired
-  }
-  const [showContent, setShowContent] = useState(false);
-
-  useEffect(() =>
-  {
-    if (props.animateCircle) {
-      // If the clip-path animation is completed, show the content
-      setShowContent(true);
-  }
-  },[props.animateCircle])
     
     return(
-        // Home Container
-        <div className='main-home-container'>
-      {/* Home-container-absolute starts */}
-        <div className={`home-container ${props.animateCircle ? 'animate-circle' : ''}`}>
-        <div className="company-name-container"> {/* Company name container*/}
-          <h1 className={`company-name ${props.animateCircle ? 'animate-text' : ''}`}>DURADARS</h1>
-
+       // Main Home Container
+       <>
+        <section className='main-home-container'>
          {/* Tagline and Paragraph */}
-         {showContent && (
-            <>
             {/* Content Container starts */}
             <div className='content-container-wrapper'>
                 <div className="content-container fade-in">
-                    <h2 className="tagline slide-left"><span className='span-head'>Securing</span> your peace of mind, one click 👆 at a time</h2>
-                    <p className="paragraph slide-left">Your paragraph goes here. Add some meaningful content.</p>
-                    <button className="custom-button slide-left">Contact Us</button>
-
-                    {/*Hero Section Starts */}
-                    <div className='hero-image'>
-                    <img src={CyberImage} alt="Cyber-Image" className="svg-image slide-right"/>
+                  
+                    {/*Hero Section content Starts */}
+                    <div className="hero-section-content">
+                    <h2 className="tagline slide-left"> {taglineJSX}
+                {taglineText}</h2>
+                    <p className="paragraph slide-left">{paragraph}</p>
+                    <Link to="/contact">
+                      <button className="custom-button slide-left">Contact Us</button>
+                    </Link>
                     </div>
-                    {/* Hero Section ends */}
+                    {/*Hero Section content Ends */}
+
+                    <div className="hero-section-image">
+                    {/*Hero Section Image Starts */}
+                      <div className='hero-image'>
+                        <img src={image} alt="Cyber-Image" className="svg-image slide-right"/>
+                      </div>
+                    </div>
+                    {/* Hero Section Image ends */}
                     </div>
                 </div>
             {/* Content Container Ends */}
-                </>
-            )}
-        </div>
-      </div>
-      {/* Home-container-absolute ends */}
-      {showContent && ( 
-        <>
-        <div>
+      </section>
+      {/* Main Home Container Ends */}
+
+      <div>
           <AboutHome />
-          <ServiceHome />
+          <ServiceSec />
           <Why />
         </div>
-        </>
+      </>
       )}
-      </div>
-      // Home Container- ends
-      )}
+
+      Home.defaultProps = {
+        taglineJSX: null,
+        taglineText: "",
+        paragraph: "",
+        image: "",
+      };
+      
+      Home.propTypes = {
+        taglineJSX: PropTypes.node,
+        taglineText: PropTypes.string.isRequired,
+        paragraph: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+      };
 
 export default Home;
