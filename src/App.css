@@ -2,17 +2,31 @@
 {
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
 }
 
-.home-container.animate-circle::after {
-    width: 200vw;
-    height: 200vh;
+html,body
+{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+section
+{
+    position:relative;
+    width:100vw;
+}
+
+    #main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
   }
 
-  .home-container.animate-circle .company-name
-  {
-    font-size: 4em;
-    color:#b3245c;
-    transition: font-size 1.5s ease-in-out, color 1.5s ease-in-out;
-    display:none
-  }
+  .span-head
+{
+  color:#b3245c;
+}
