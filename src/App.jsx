@@ -5,8 +5,7 @@ import Contact from './Components/Contact';
 import Services from './Components/Services';
 import AboutUs from './Components/AboutUs';
 import Career from './Components/Career';
-import AboutSec from './Components/AboutSec';
-import ServiceSec from './Components/ServiceSec';
+// import ServiceSec from './Components/ServiceSec';
 import Footer from './Components/Footer';
 import './App.css'
 import CyberImage from "./assets/cyber-image.jpg"
@@ -24,6 +23,28 @@ const App = () =>
         taglineText: " your peace of mind, one click 👆 at a time",
         paragraph:"Your paragraph goes here. Add some meaningful content.",
         image:CyberImage
+    },
+
+    AboutSec:{
+      taglineJSX: (
+        <span className='span-head'>
+         Empowering Security
+        </span>
+      ),
+        taglineText: " in a Connected World 🌐",
+        paragraph:"Your paragraph goes here. Add some meaningful content.",
+        image:CyberImage
+    },
+
+    ServiceSec:{
+      taglineJSX: (
+        <span className='span-head'>
+         Empowering Security
+        </span>
+      ),
+        taglineText: " in a Connected World 🌐",
+        paragraph:"Your paragraph goes here. Add some meaningful content.",
+        image:CyberImage
     }
 
    
@@ -35,11 +56,10 @@ const App = () =>
       <Routes>
         <Route path="/" element={<Home {...siteProps.HomeSec}/>} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/services" element={<Services {...siteProps.ServiceSec}/>} />
+        <Route path="/aboutus" element={<AboutUs {...siteProps.AboutSec}/>} />
         <Route path="/career" element={<Career />} />
-        <Route path="/aboutus" element={<AboutSec {...siteProps.AboutSec}/>} />
-        <Route path="/aboutus" element={<ServiceSec />} />
+        {/* <Route path="/aboutus" element={<ServiceSec />} /> */}
       </Routes>
       <Footer />
 

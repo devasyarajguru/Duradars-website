@@ -56,8 +56,17 @@
   color:white;
 }
 
-@media (max-width: 400px) {
-  .nav-list li {
-    margin-bottom: 0; 
+@media (max-width: 568px) {
+  .nav-list li a{
+    font-size:12px;
+    min-width: 50px;
   }
+
+  .logo{
+    max-width:100px;
+  }
+
+  .navbar {
+   width:100%;
+}
 }
