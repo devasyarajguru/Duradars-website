@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
-import { Link } from 'react-router-dom';
 import '../CSS/Home.css'
 import '../CSS/About.css'
 import { Fade } from "react-reveal";
-const AboutUs = ({taglineJSX, taglineText , paragraph , image}) =>
+import MainHero from "./MainHero";
+
+const AboutUs = ({ taglineJSX, taglineText, paragraph, image }) =>
 {
     const sectionDetails = [
         {
@@ -21,35 +22,13 @@ const AboutUs = ({taglineJSX, taglineText , paragraph , image}) =>
       ];
 
     return(
-       // Main About Us Container
        <>
-        <section className='main-home-container'>
-         {/* Tagline and Paragraph */}
-            {/* Content Container starts */}
-            <div className='content-container-wrapper'>
-                <div className="content-container fade-in">
-                  
-                    {/*Hero Section content Starts */}
-                    <div className="hero-section-content">
-                    <h2 className="tagline slide-left"> {taglineJSX}{taglineText}</h2>
-                    <p className="paragraph slide-left">{paragraph}</p>
-                    <Link to="/contact">
-                      <button className="custom-button slide-left">Contact Us</button>
-                    </Link>
-                    </div>
-                    {/*Hero Section content Ends */}
+          {/* MainHero Content Starts*/}
 
-                    <div className="hero-section-image">
-                    {/*Hero Section Image Starts */}
-                      <div className='hero-image'>
-                        <img src={image} alt="Cyber-Image" className="svg-image slide-right"/>
-                      </div>
-                    </div>
-                    {/* Hero Section Image ends */}
-                    </div>
-                </div>
-            {/* Content Container Ends */}
-        
+          {MainHero({ taglineJSX, taglineText, paragraph, image })}
+          
+          {/* MainHero Content Ends*/}
+
         {/* Responsive Container Starts*/}
         <div className="responsive-container-block bigContainer">
       {sectionDetails.map((section, index) => (
@@ -66,11 +45,7 @@ const AboutUs = ({taglineJSX, taglineText , paragraph , image}) =>
       ))}
     </div>
         {/* Responsive Container */}
-
-      </section>
-      
-      {/* Main About Us Container Ends */}
-      </>
+        </>
       )}
 
       AboutUs.defaultProps = {
