@@ -9,6 +9,7 @@ import Career from './Components/Career';
 import Footer from './Components/Footer';
 import './App.css'
 import CyberImage from "./assets/cyber-image.jpg"
+import Process from './Components/Process';
 
 const App = () =>
 {
@@ -28,7 +29,7 @@ const App = () =>
     AboutSec:{
       taglineJSX: (
         <span className='span-head'>
-         Empowering Security
+         Empowering Security2
         </span>
       ),
         taglineText: " in a Connected World 🌐",
@@ -39,15 +40,46 @@ const App = () =>
     ServiceSec:{
       taglineJSX: (
         <span className='span-head'>
-         Empowering Security
+         Empowering Security3
+        </span>
+      ),
+        taglineText: " in a Connected World 🌐",
+        paragraph:"Your paragraph goes here. Add some meaningful content.",
+        image:CyberImage
+    },
+
+    ProcessSec:{
+      taglineJSX: (
+        <span className='span-head'>
+         Empowering Security4
+        </span>
+      ),
+        taglineText: " in a Connected World 🌐",
+        paragraph:"Your paragraph goes here. Add some meaningful content.",
+        image:CyberImage
+    },
+   
+    CareerSec:{
+      taglineJSX: (
+        <span className='span-head'>
+         Empowering Security5
+        </span>
+      ),
+        taglineText: " in a Connected World 🌐",
+        paragraph:"Your paragraph goes here. Add some meaningful content.",
+        image:CyberImage
+    },
+
+    ContactSec:{
+      taglineJSX: (
+        <span className='span-head'>
+         Empowering Security6
         </span>
       ),
         taglineText: " in a Connected World 🌐",
         paragraph:"Your paragraph goes here. Add some meaningful content.",
         image:CyberImage
     }
-
-   
   }
 
   return(
@@ -55,10 +87,11 @@ const App = () =>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home {...siteProps.HomeSec}/>} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact {...siteProps.CareerSec}/>} />
         <Route path="/services" element={<Services {...siteProps.ServiceSec}/>} />
         <Route path="/aboutus" element={<AboutUs {...siteProps.AboutSec}/>} />
-        <Route path="/career" element={<Career />} />
+        <Route path="/career" element={<Career {...siteProps.CareerSec}/>} />
+        <Route path="/process" element={<Process {...siteProps.ProcessSec}/>} />
         {/* <Route path="/aboutus" element={<ServiceSec />} /> */}
       </Routes>
       <Footer />
