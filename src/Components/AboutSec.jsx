@@ -35,7 +35,7 @@ const AboutSec = () => {
         <p className='about-us-second'>
           {AboutSecDetails.paragraph}
         </p>
-        <Link to="/aboutus" className="learn-more-button">Learn More</Link>
+        <Link to="/aboutus#main-home-container" className="learn-more-button">Learn More</Link>
       </div>
       {/* About Us Content Ends*/}
 

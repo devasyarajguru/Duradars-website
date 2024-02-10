@@ -2,8 +2,9 @@ import PropTypes from "prop-types";
 // import WorkProcess from "../assets/work.png"
 import '../CSS/Process.css'
 import MainHero from "./MainHero";
-import ProcessImage from "../assets/service1.png"
+import ProcessImage from "../assets/service1.jpg"
 import { Fade } from "react-reveal";
+import ContactSec from "./ContactSec";
 
 
 const Process = ({taglineJSX , taglineText , paragraph , image }) =>
@@ -58,6 +59,10 @@ const Process = ({taglineJSX , taglineText , paragraph , image }) =>
           ))}
       
         {/* Main Process container Ends */}
+
+        <div style={{marginTop:"50px"}}>
+          <ContactSec />
+        </div>
      </>
     )
 }

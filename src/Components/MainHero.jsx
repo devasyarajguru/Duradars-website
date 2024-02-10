@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from "prop-types";
 
 const MainHero = ({ taglineJSX, taglineText, paragraph, image }) => (
-    <section className='main-home-container'>
+    <section className='main-home-container' id='main-home-container'>
       {/* Tagline and Paragraph */}
       {/* Content Container starts */}
       <div className='content-container-wrapper'>

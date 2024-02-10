@@ -69,13 +69,19 @@ const Services = ({taglineJSX, taglineText , paragraph , image}) =>
       </div>
     </section>
 
-
     </Fade>
        {/* Responsive Container Ends*/}
 
-       <div>
-        <Why />
-        <ContactSec />
+       <div className="mainSec-div">
+
+       <div style={{marginBottom:"350px", marginTop:"50px"}}>
+          <Why />
+        </div>
+
+        <div style={{ marginTop:"50px"}}>
+          <ContactSec />
+        </div>
+
        </div>
      </>
     )

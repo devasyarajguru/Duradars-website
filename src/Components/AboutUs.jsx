@@ -3,6 +3,9 @@ import '../CSS/Home.css'
 import '../CSS/About.css'
 import { Fade } from "react-reveal";
 import MainHero from "./MainHero";
+import AboutSec from "./AboutSec";
+import ContactSec from "./ContactSec";
+import Why from "./Why";
 
 const AboutUs = ({ taglineJSX, taglineText, paragraph, image }) =>
 {
@@ -29,6 +32,9 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image }) =>
           
           {/* MainHero Content Ends*/}
 
+        <div>
+          <AboutSec />
+        </div>
         {/* Responsive Container Starts*/}
         <div className="responsive-container-block bigContainer">
       {sectionDetails.map((section, index) => (
@@ -45,6 +51,17 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image }) =>
       ))}
     </div>
         {/* Responsive Container */}
+        <div className="mainSec-div">
+
+       <div style={{marginBottom:"350px", marginTop:"50px"}}>
+          <Why />
+        </div>
+
+        <div style={{ marginTop:"50px"}}>
+          <ContactSec />
+        </div>
+
+       </div>
         </>
       )}
 

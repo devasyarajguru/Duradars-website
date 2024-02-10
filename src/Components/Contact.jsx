@@ -2,9 +2,10 @@ import MainHero from "./MainHero";
 import PropTypes from "prop-types";
 import '../CSS/Contact.css';
 import { useState } from 'react';
-
 import { useForm } from '@formspree/react';
 import ContactSec from "./ContactSec";
+import { ToastContainer, toast , Bounce} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Contact({ taglineJSX, taglineText, paragraph, image }) {
   const [state, formSubmit] = useForm("xvoekwrz");
  
@@ -14,7 +15,8 @@ function Contact({ taglineJSX, taglineText, paragraph, image }) {
     message:""
   })
 
-  const [errors,setErrors] = useState({})
+  const [errors,setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) =>
   {
@@ -42,13 +44,25 @@ function Contact({ taglineJSX, taglineText, paragraph, image }) {
     {
       await formSubmit(formData);
       setErrors({});
-      alert("Your Response has been submitted! Thank You!");
+      // alert("Your Response has been submitted! Thank You!");
+      setSubmitted(true)
       // Optionally, reset form data after successful submission
       setFormData({
         name:"",
         email:"",
         message:""
       });
+      toast.success('Your Response has been submitted! Thank You!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+        })
     }
 
     catch (error)
@@ -101,7 +115,10 @@ function Contact({ taglineJSX, taglineText, paragraph, image }) {
         errors={errors}
         state={state}
       />
-    
+
+{submitted && (
+        <ToastContainer /> 
+      )}
     </>
   );
 }

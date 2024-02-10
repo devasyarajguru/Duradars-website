@@ -2,14 +2,13 @@
 import '../CSS/ServiceSec.css';
 import '../App.css'
 import Fade from 'react-reveal/Fade';
-import Service1 from "../assets/service1.png"
-import Service2 from "../assets/service2.png"
+import Service1 from "../assets/service1.jpg"
+import Service2 from "../assets/service2.jpg"
 import Service3 from "../assets/service3.jpg"
 import Service4 from "../assets/service4.jpg"
 import Service5 from "../assets/service5.jpg"
 import Service6 from "../assets/service6.jpg"
 import { Link } from 'react-router-dom';
-
 
 const ServiceSec = () => {
   const SecDetail =
@@ -49,7 +48,7 @@ const ServiceSec = () => {
   return (
     
     //Problem to be solved 
-    <Fade bottom distance="30%"  duration={1500}>
+    <Fade bottom distance="30%" duration={2500}>
     {/*  <Fade bottom distance="30%"  duration={2500}> */}
     <section className="service-home-container">
       <h2 className="section-title">{SecDetail.title}</h2>
@@ -58,9 +57,9 @@ const ServiceSec = () => {
        
           {SecDetail.detail.map((service) =>(
             <div className="service-item" key={service.service}>
-              <Link to="/aboutus"><img src={service.img} alt="Services" /></Link>
+              <Link to="/services#main-home-container"><img src={service.img} alt="Services" /></Link>
                   <h2>{service.service}</h2>
-              <Link to="/aboutus" className="learn-more-button">{SecDetail.button}</Link>
+              <Link to="/services#main-home-container" className="learn-more-button">{SecDetail.button}</Link>
             </div>
           ))}
           

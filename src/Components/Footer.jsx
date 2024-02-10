@@ -21,6 +21,7 @@ const Footer = () => {
       <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
           <Link to="/services">Our Services</Link>
+          <Link to="/process">Process</Link>
           <Link to="/career">Career</Link>
         {/* Add more links as needed */}
       </div>
@@ -39,12 +40,13 @@ const Footer = () => {
       </div>
 
       </div>
-    {/* Footer Container ends*/}
-
-
+      
       <div className="copyright">
         <p>&copy; 2024 Your Company. All rights reserved.</p>
       </div>
+    {/* Footer Container ends*/}
+
+
     </>
   );
 };
