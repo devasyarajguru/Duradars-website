@@ -21,14 +21,14 @@
     justify-content: center;
     padding: 48px;
     font-family: 'Open Sans', sans-serif;
-
+    background-color: #f2f2f2;
   }
 
   .formbold-form-wrapper {
     margin: 0 auto;
     max-width: 550px;
     width: 100%;
-    background: white;
+    /* background: white; */
   }
   .formbold-form-label {
     display: block;

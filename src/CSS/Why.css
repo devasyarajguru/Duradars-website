@@ -1,16 +1,21 @@
 /* Why.css */
 
 .why-container {
-    text-align: center;
+    /* text-align: center;
     padding: 50px;
     margin-top:50px;
-  font-family: 'Open Sans', sans-serif;
-    
+  font-family: 'Open Sans', sans-serif; */
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top:50px;    
   }
   
   .why-grid {
     width:56rem;
-    height:50rem;
+    height:30rem;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 60px;
@@ -18,11 +23,14 @@
   }
   
   .why-container h2{
-    font-size: 1.3em;
+    /* font-size: 1.3em;
     color: #b3245c;
     padding: 1rem;
-    margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif; */
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #b3245c;
+    padding: 1rem;
   }
 
   .why-item {
@@ -44,9 +52,8 @@
   }
 
   .why-item:hover {
-    /* background-color:#329c95; */
     background-color:#b3245c;
-    transition: transform 2.3s ease-in-out, 
+    transition: transform 20s ease-in-out;
   }
 
   .why-item:hover .support,

@@ -43,7 +43,7 @@
     float:left;
 }
 
-.nav-list li:nth-child(2) a {
+.nav-list li:nth-child(6) a {
   background-color: white;
   padding: 8px 16px; 
   color: #b3245c;
@@ -51,7 +51,7 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-list li:nth-child(2) a:hover{
+.nav-list li:nth-child(6) a:hover{
   background-color:#b3245c;
   color:white;
 }

@@ -1,0 +1,32 @@
+/* Add styles for the no openings message */
+.no-openings-message {
+    padding: 50px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-top: 20px;
+    /* margin-bottom: 150px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.no-openings-message p {
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.custom-button {
+    margin-top: 1.5rem;
+    background-color: #b3245c;
+    width: 150px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
