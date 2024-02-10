@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 import './App.css'
 import CyberImage from "./assets/cyber-image.jpg"
 import Process from './Components/Process';
+import NotFound from './Components/NotFound';
 
 const App = () =>
 {
@@ -92,6 +93,7 @@ const App = () =>
         <Route path="/aboutus" element={<AboutUs {...siteProps.AboutSec}/>} />
         <Route path="/career" element={<Career {...siteProps.CareerSec}/>} />
         <Route path="/process" element={<Process {...siteProps.ProcessSec}/>} />
+        <Route path="*" element={<NotFound />} />
         {/* <Route path="/aboutus" element={<ServiceSec />} /> */}
       </Routes>
       <Footer />
