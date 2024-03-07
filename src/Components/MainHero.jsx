@@ -43,6 +43,5 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image }) => (
     paragraph: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
   };
-  // Usage in your pages (e.g., AboutUs.jsx, Services.jsx)
  export default MainHero;
   
