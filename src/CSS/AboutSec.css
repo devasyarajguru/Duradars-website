@@ -97,3 +97,15 @@
 .learn-more-button:hover {
   background-color: #329c95; 
 }
+
+
+@media (max-width:568px) {
+  .about-us-container{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+
+    
+}

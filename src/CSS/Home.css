@@ -121,16 +121,16 @@
   }
   .tagline
   {
-    max-width:400px;
-    font-size:1.75rem;
+    max-width:300px;
+    font-size:25px;
     width:100%;
     text-align: center;
-  }
+    margin-top: -50px;
+    }
 
   .paragraph
   {
-    /* font-size:1rem; */
-    font-size:2.5vw;
+    font-size:1rem;
     width: 100%;
     text-align: center;
   }
@@ -149,5 +149,12 @@
     align-items: center;
     margin-bottom: 5rem;
   }
+
+  .svg-image{
+   width:300px;
+  }
+
+  
+
 }
 
