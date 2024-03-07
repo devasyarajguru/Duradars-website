@@ -23,7 +23,7 @@ const App = () =>
         </span>
       ),
         taglineText: " your peace of mind, one click 👆 at a time",
-        paragraph:"Your paragraph goes here. Add some meaningful content.",
+        paragraph:"",
         image:CyberImage
     },
 
@@ -88,7 +88,7 @@ const App = () =>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home {...siteProps.HomeSec}/>} />
-        <Route path="/contact" element={<Contact {...siteProps.CareerSec}/>} />
+        <Route path="/contact" element={<Contact {...siteProps.ContactSec}/>} />
         <Route path="/services" element={<Services {...siteProps.ServiceSec}/>} />
         <Route path="/aboutus" element={<AboutUs {...siteProps.AboutSec}/>} />
         <Route path="/career" element={<Career {...siteProps.CareerSec}/>} />
