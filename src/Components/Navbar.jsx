@@ -7,15 +7,17 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className='logo-container'>
-          <img src={Logo2} alt="Logo1" className="logo"/>
+      <Link to="/">
+          <img src={Logo2} alt="Logo2" className="logo"/>
+      </Link>
         </div>
       <ul className="nav-list">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/services">Services</Link></li>
-        <li><Link to="/aboutus">About Us</Link></li>
-        <li><Link to="/process">Process</Link></li>
-        <li><Link to="/career">Career</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+      <li><Link to="/#main-home-container">Home</Link></li>
+        <li><Link to="/services#main-home-container">Services</Link></li>
+        <li><Link to="/aboutus#main-home-container">About Us</Link></li>
+        <li><Link to="/process#main-home-container">Process</Link></li>
+        <li><Link to="/career#main-home-container">Career</Link></li>
+        <li><Link to="/contact#main-home-container">Contact</Link></li>
       </ul>
     </nav>
   );
