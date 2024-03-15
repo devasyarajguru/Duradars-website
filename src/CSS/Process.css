@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 20px; /* Adjust margin as needed */
+  margin: 20px; 
 }
 
 .process-container.reverse {
@@ -41,4 +41,84 @@
     /* color: #4cd0c1; */
     color: #b3245c;
     font-weight: 600;
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .process-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process-container.reverse {
+    flex-direction: column;
+  }
+  
+  .text-heading
+  {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .text-content p
+  {
+    text-align: center;
+    width: 90%;
+  }
+}
+
+/* iPads, Tablets (481px to 786px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .process-container {
+    max-width: 90%;
+  }
+  .process-image {
+    max-width: 400px; 
+    height: 250px; 
+  }
+  .text-content
+  {
+    margin-left: 5%;
+  }
+  .text-heading {
+    font-size: 1.1em; 
+  }
+}
+
+/* Small Screens, Laptops (769px to 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .process-container {
+    max-width: 90%;
+  }
+  .process-image {
+    max-width: 450px; 
+    height: 280px; 
+  }
+  .text-heading {
+    font-size: 1.2em; 
+  }
+
+  .text-content
+  {
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .process-container {
+    max-width: 90%;
+   
+  }
+  .process-image {
+    max-width: 500px;    
+    height: 320px; 
+  }
+  .text-heading {
+    font-size: 1.3em;
+  }
+
+  .text-content
+  {
+    margin-left: 5%;
+  }
 }

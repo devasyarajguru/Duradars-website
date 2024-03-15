@@ -1,32 +1,25 @@
 /* Why.css */
 
 .why-container {
-    /* text-align: center;
-    padding: 50px;
-    margin-top:50px;
-  font-family: 'Open Sans', sans-serif; */
     width: 100%;
+    padding: 50px 0;
     display: grid;
-    place-items: center;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    margin-top:50px;    
+    margin-top:50px;
   }
   
   .why-grid {
-    width:56rem;
-    height:30rem;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 60px;
+    max-width: 1200px;
+    width: 60%;
     margin:0 auto;
+    
   }
   
   .why-container h2{
-    /* font-size: 1.3em;
-    color: #b3245c;
-    padding: 1rem;
-    font-family: 'Open Sans', sans-serif; */
     font-size: 1.3em;
     margin-bottom: 10px;
     color: #b3245c;
@@ -90,3 +83,73 @@
     margin-bottom: 25px;
     padding:10px;
   }
+
+  
+  @media (max-width: 768px) {
+    
+    .why-grid {
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 20px; 
+      width: 70%; 
+      margin: 0 auto; 
+    }
+  
+    .why-container h2 {
+      font-size: 1.2em;
+    }
+
+   
+
+    .why-first
+    {
+      font-size: 1.2em;
+    }
+
+    .why-second
+    {
+      font-size: 0.7em;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .why-grid {
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px; 
+      width: 70%; 
+      margin: 0 auto; 
+    }
+  
+    .why-container h2 {
+      font-size: 1.2em;
+    }
+  
+    .why-first {
+      font-size: 1.2em;
+    }
+  
+    .why-second {
+      font-size: 0.7em;
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    .why-grid {
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px; 
+      width: 60%; 
+      margin: 0 auto; 
+    }
+  
+    .why-container h2 {
+      font-size: 1.3em;
+    }
+  
+    .why-first {
+      font-size: 1.3em;
+    }
+  
+    .why-second {
+      font-size: 0.8em;
+    }
+  }
+  

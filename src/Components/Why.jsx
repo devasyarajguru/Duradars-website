@@ -44,7 +44,7 @@ const Why = () => {
         {/* Items */}
           {WhyDetails.items.map((detail) =>
           (
-            <div className="why-item" key={detail.title}>
+          <div className="why-item" key={detail.title}>
             {detail.icon}
             <p className='why-first'>
               {detail.title}

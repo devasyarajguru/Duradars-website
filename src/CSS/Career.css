@@ -30,3 +30,18 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+@media (min-width: 769px) and (max-width: 1241px) {
+    .no-openings-message
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-button
+    {
+        align-self: center;
+    }
+  }

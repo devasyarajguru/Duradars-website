@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import Fade from 'react-reveal/Fade';
+import '../CSS/Contact.css';
 
 const ContactSec = ({ formData, handleChange, handleSubmit, errors }) => {
   return (

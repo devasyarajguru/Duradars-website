@@ -77,3 +77,22 @@
     background-color: #329c95;
   }
   
+
+  @media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 10px; 
+        padding: 0 10px;
+    }
+
+    .service-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 0.7em;
+  }
+
+  .learn-more-button {
+      align-self:center;
+  }
+}

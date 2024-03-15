@@ -1,12 +1,10 @@
   #responsive {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: grid;
     place-items: center;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 250px;
-    /* background-color: ; */
   }
 
   #responsive h2
@@ -83,6 +81,16 @@
   .card-para:hover{
     color: #ffffff;
   }
+
+  @media screen and (max-width: 768px) {
+   .column
+   {
+    max-width: 80%;
+    margin: 0 auto;
+   }
+  }
+
+
   @media screen and (min-width: 768px) {
     section {
       padding: 0 2em;

@@ -28,10 +28,10 @@ const Home = ({taglineJSX, taglineText , paragraph , image}) =>
           <ServiceSec />
         </div>
 
-        <div style={{marginBottom:"350px", marginTop:"50px"}}>
+        <div style={{marginBottom:"50px", marginTop:"50px"}}>
           <Why />
         </div>
-
+        
         <div style={{marginTop:"50px"}}>
           <ContactSec />
         </div>

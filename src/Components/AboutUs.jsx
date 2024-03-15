@@ -3,7 +3,7 @@ import '../CSS/Home.css'
 import '../CSS/About.css'
 import { Fade } from "react-reveal";
 import MainHero from "./MainHero";
-import AboutSec from "./AboutSec";
+// import AboutSec from "./AboutSec";
 import ContactSec from "./ContactSec";
 import Why from "./Why";
 
@@ -32,9 +32,9 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image }) =>
           
           {/* MainHero Content Ends*/}
 
-        <div>
+        {/* <div>
           <AboutSec />
-        </div>
+        </div> */}
         {/* Responsive Container Starts*/}
         <div className="responsive-container-block bigContainer">
       {sectionDetails.map((section, index) => (

@@ -23,7 +23,7 @@ const App = () =>
         </span>
       ),
         taglineText: " your peace of mind, one click 👆 at a time",
-        paragraph:"",
+        paragraph:"Your paragraph goes here. Add some meaningful content.",
         image:CyberImage
     },
 

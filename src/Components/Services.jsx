@@ -74,7 +74,7 @@ const Services = ({taglineJSX, taglineText , paragraph , image}) =>
 
        <div className="mainSec-div">
 
-       <div style={{marginBottom:"350px", marginTop:"50px"}}>
+       <div style={{marginBottom:"50px", marginTop:"50px"}}>
           <Why />
         </div>
 
