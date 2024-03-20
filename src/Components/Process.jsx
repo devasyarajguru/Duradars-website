@@ -36,8 +36,10 @@ const Process = ({taglineJSX , taglineText , paragraph , image }) =>
         },
       ];
 
+  
     return(
        <>
+
          {/* MainHero Content Starts*/}
          {MainHero({ taglineJSX, taglineText, paragraph, image })}
          {/* MainHero Content Ends*/}

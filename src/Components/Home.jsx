@@ -7,11 +7,11 @@ import Why from './Why';
 import '../CSS/Home.css'
 import MainHero from "./MainHero";
 
+
 const Home = ({taglineJSX, taglineText , paragraph , image}) =>
 {
-    
     return(
-       <>
+      <>
         {/* MainHero Content Starts*/}
 
         {MainHero({ taglineJSX, taglineText, paragraph, image })}

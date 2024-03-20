@@ -17,6 +17,14 @@ const Navbar = () => {
           <img src={Logo2} alt="Logo2" className="logo"/>
       </Link>
         </div>
+
+      <ul className="nav-list">
+      <li><Link to="/" >Home</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/aboutus">About Us</Link></li>
+        <li><Link to="/process">Process</Link></li>
+        <li><Link to="/career">Career</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
         {/* Render hamburger icon based on isOpen state */}
       <div className={`menu-toggle ${isOpen ? 'active' : ''}`} onClick={handleToggle}>
         <div className="bar"></div>
