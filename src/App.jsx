@@ -1,16 +1,19 @@
+import "./App.css";
+import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import Home from "./Components/Home";
-import Contact from "./Components/Contact";
-import Services from "./Components/Services";
-import AboutUs from "./Components/AboutUs";
-import Career from "./Components/Career";
-// import ServiceSec from './Components/ServiceSec';
 import Footer from "./Components/Footer";
-import "./App.css";
-import CyberImage from "./assets/cyber-image.jpg";
-import Process from "./Components/Process";
 import NotFound from "./Components/NotFound";
+import CyberImage from "./assets/cyber-image.jpg";
+import Spinner from "./Components/Spinner";
+
+const Home = lazy(() => import( "./Components/Home")) ;
+const Contact = lazy(() => import("./Components/Contact"));
+const Services = lazy(() => import("./Components/Services"));
+const AboutUs = lazy(() => import("./Components/AboutUs"));
+const Career = lazy(() => import("./Components/Career"));
+const Process = lazy(() => import("./Components/Process"));
+// import ServiceSec from './Components/ServiceSec';
 
 const App = () => {
   const siteProps = {
@@ -60,6 +63,7 @@ const App = () => {
   return (
     <div id="main">
       <Navbar />
+      <Suspense fallback={<Spinner />}>
       <Routes>
         <Route path="/" element={<Home {...siteProps.HomeSec}/>}/>
           <Route
@@ -83,6 +87,7 @@ const App = () => {
         {/* <Route path="/aboutus" element={<ServiceSec />} /> */}
       </Routes>
       <Footer />
+      </Suspense>
     </div>
   );
 };
