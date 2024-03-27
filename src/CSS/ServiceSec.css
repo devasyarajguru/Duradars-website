@@ -32,7 +32,8 @@
   .service-item img {
     width: 100%;
     max-width: 350px;
-    height: 200px;
+    height: auto;
+    /* height: 200px; */
     max-height: 300px;
     object-fit: cover;
     border-radius: 8px;
