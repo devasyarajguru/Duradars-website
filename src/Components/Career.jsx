@@ -21,6 +21,7 @@ const Career = ({ taglineJSX, taglineText, paragraph, image }) =>
                 <button className="custom-button">Home</button>
                 </Link>
           </div>  
+          
         </>
       )}
 
