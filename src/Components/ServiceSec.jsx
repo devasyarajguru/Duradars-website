@@ -46,16 +46,6 @@ const ServiceSec = () => {
     ]
   }
   return (
-    
-    /*Problem to be solved
-
-    1) Image Loading problem - optimize , compress
-
-    2) Css is  not working properly in 400px - 700  for images
-
-    3) Hamburger menu
-    */
-
     <Fade bottom distance="30%" duration={2500}>
     {/*  <Fade bottom distance="30%"  duration={2500}> */}
     <section className="service-home-container">
