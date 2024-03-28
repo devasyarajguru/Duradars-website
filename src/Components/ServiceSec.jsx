@@ -47,7 +47,15 @@ const ServiceSec = () => {
   }
   return (
     
-    //Problem to be solved 
+    /*Problem to be solved
+
+    1) Image Loading problem - optimize , compress
+
+    2) Css is  not working properly in 400px - 700  for images
+
+    3) Hamburger menu
+    */
+
     <Fade bottom distance="30%" duration={2500}>
     {/*  <Fade bottom distance="30%"  duration={2500}> */}
     <section className="service-home-container">
@@ -57,7 +65,7 @@ const ServiceSec = () => {
        
           {SecDetail.detail.map((service) =>(
             <div className="service-item" key={service.service}>
-              <Link to="/services#main-home-container"><img src={service.img} alt="Services" /></Link>
+              <Link to="/services"><img src={service.img} alt="Services" loading="lazy" style={{width:"350px" , height:"200px"}}/></Link>
                   <h2>{service.service}</h2>
               <Link to="/services#main-home-container" className="learn-more-button">{SecDetail.button}</Link>
             </div>

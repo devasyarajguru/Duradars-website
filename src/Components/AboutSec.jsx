@@ -22,11 +22,11 @@ const AboutSec = () => {
       <div className="about-us-container">
         {/* Image Stack Container */}
       <div className="image-stack">
-        <img src={AboutSecDetails.image1} alt="Image 1" className='about1-image'/>
-        <img src={AboutSecDetails.image2} alt="Image 2" className='about2-image'/>
+        <img src={AboutSecDetails.image1} alt="Image 1" loading="lazy" className='about1-image'/>
+        <img src={AboutSecDetails.image2} alt="Image 2" loading="lazy" className='about2-image'/>
       </div>
         {/* Image Stack Container ends*/}
-      <img src={AboutSecDetails.image3} alt="Image 3" className="side-image" />
+      <img src={AboutSecDetails.image3} alt="Image 3" loading="lazy" className="side-image" />
 
       {/* About Us Content */}
       <div className="about-us-content">

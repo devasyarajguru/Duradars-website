@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 const Career = ({ taglineJSX, taglineText, paragraph, image }) =>
 {
+
   const message = "There are currently no open positions available"    
     return(
        <>
@@ -20,6 +21,7 @@ const Career = ({ taglineJSX, taglineText, paragraph, image }) =>
                 <button className="custom-button">Home</button>
                 </Link>
           </div>  
+          
         </>
       )}
 

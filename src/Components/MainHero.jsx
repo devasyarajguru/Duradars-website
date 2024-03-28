@@ -1,9 +1,17 @@
 // Helper function for rendering the main home container
 import { Link } from 'react-router-dom';
 import PropTypes from "prop-types";
+import { useEffect,useRef } from 'react';
 
-const MainHero = ({ taglineJSX, taglineText, paragraph, image }) => (
+const MainHero = ({ taglineJSX, taglineText, paragraph, image }) =>{
+  const topRef = useRef();
+
+  useEffect(() => {
+    topRef.current.scrollIntoView({behavior: "smooth"});
+  }, []);
+  return(
     <section className='main-home-container' id='main-home-container'>
+      <div ref={topRef}></div>
       {/* Tagline and Paragraph */}
       {/* Content Container starts */}
       <div className='content-container-wrapper'>
@@ -29,7 +37,8 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image }) => (
       </div>
       {/* Content Container Ends */}
     </section>
-  );
+  )
+}
   MainHero.defaultProps = {
     taglineJSX: null,
     taglineText: "",
