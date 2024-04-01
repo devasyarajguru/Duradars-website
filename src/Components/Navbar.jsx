@@ -1,5 +1,5 @@
 // Navbar.js
-import Logo2 from "../assets/image2.png"
+import Logo2 from "../assets/image2.webp"
 import { Link } from 'react-router-dom';
 import '../CSS/Navbar.css';
 import { useState } from 'react';
