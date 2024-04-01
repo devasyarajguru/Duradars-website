@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import NotFound from "./Components/NotFound";
-import CyberImage from "./assets/cyber-image.jpg";
+import CyberImage from "./assets/cyber-image.webp";
 import Spinner from "./Components/Spinner";
 
 const Home = lazy(() => import( "./Components/Home")) ;
