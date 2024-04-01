@@ -2,17 +2,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 20px; 
 }
 
 .process-container.reverse {
   flex-direction: row-reverse;
-}
-
-.image-div,
-.text-content {
-  flex: 1;
-}
+  background-color: #f4f4f4;
+  /* width: 100%; */
+} 
 
 .text-content{
   font-family: 'Open Sans', sans-serif;
@@ -20,12 +16,13 @@
 
 .process-image {
   width: 100%;
-    max-width: 500px;
-    height: 300px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    max-height: 250px;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     object-fit: cover;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    padding: 20px;
 }
 
 .process-image:hover
