@@ -1,6 +1,6 @@
 // Footer.jsx
 import { Link } from 'react-router-dom';
-import Logo2 from "../assets/image2.webp"
+import Logo2 from "../assets/images/image2.webp"
 import '../CSS/Footer.css'
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";

@@ -2,12 +2,12 @@
 import '../CSS/ServiceSec.css';
 import '../App.css'
 import Fade from 'react-reveal/Fade';
-import Service1 from "../assets/service1.webp"
-import Service2 from "../assets/service2.webp"
-import Service3 from "../assets/service3.webp"
-import Service4 from "../assets/service4.webp"
-import Service5 from "../assets/service5.webp"
-import Service6 from "../assets/service6.webp"
+import Service1 from "../assets/images/service1.webp"
+import Service2 from "../assets/images/service2.webp"
+import Service3 from "../assets/images/service3.webp"
+import Service4 from "../assets/images/service4.webp"
+import Service5 from "../assets/images/service5.webp"
+import Service6 from "../assets/images/service6.webp"
 import { Link } from 'react-router-dom';
 
 const ServiceSec = () => {
