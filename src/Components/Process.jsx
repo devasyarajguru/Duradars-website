@@ -2,12 +2,13 @@ import PropTypes from "prop-types";
 // import WorkProcess from "../assets/work.png"
 import '../CSS/Process.css'
 import MainHero from "./MainHero";
-import ProcessImage from "../assets/process1.webp"
-import ProcessImage2 from "../assets/process2.webp"
-import ProcessImage3 from "../assets/process3.webp"
-import ProcessImage4 from "../assets/process4.webp"
+import ProcessImage from "../assets/images/process1.webp"
+import ProcessImage2 from "../assets/images/process2.webp"
+import ProcessImage3 from "../assets/images/process3.webp"
+import ProcessImage4 from "../assets/images/process4.webp"
 import { Fade } from "react-reveal";
 import ContactSec from "./ContactSec";
+import Why from "./Why";
 
 
 const Process = ({taglineJSX , taglineText , paragraph , image }) =>
@@ -65,6 +66,10 @@ const Process = ({taglineJSX , taglineText , paragraph , image }) =>
           ))}
       
         {/* Main Process container Ends */}
+          
+        <div style={{marginTop:"150px"}}>
+          <Why/>
+        </div>
 
         <div style={{marginTop:"150px"}}>
           <ContactSec />
