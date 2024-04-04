@@ -1,9 +1,9 @@
 import Fade from 'react-reveal/Fade';
 import '../CSS/AboutSec.css'
 import { Link } from 'react-router-dom';
-import About1 from "../assets/about1.webp"
-import About2 from "../assets/about2.webp"
-import About3 from "../assets/about3.jpg"
+import About1 from "../assets/images/about1.webp"
+import About2 from "../assets/images/about2.webp"
+import About3 from "../assets/images/about3.jpg"
 
 const AboutSec = () => {
 
