@@ -53,7 +53,7 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image }) =>
         {/* Responsive Container */}
         <div className="mainSec-div">
 
-       <div style={{marginBottom:"350px", marginTop:"50px"}}>
+       <div style={{marginTop:"50px"}}>
           <Why />
         </div>
 
