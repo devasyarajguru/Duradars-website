@@ -29,7 +29,7 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image }) =>{
           <div className="hero-section-image">
             {/* Hero Section Image Starts */}
             <div className='hero-image'>
-              <img src={image} alt="Cyber-Image" className="svg-image slide-right" />
+              <img src={image} alt="Cyber-Image" className="svg-image slide-right"/>
             </div>
           </div>
           {/* Hero Section Image ends */}
