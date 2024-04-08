@@ -1,6 +1,8 @@
 // Footer.jsx
 import { Link } from 'react-router-dom';
+import {LargeCyber , MediumCyber , SmallCyber } from '../scripts/export';
 import Logo2 from "../assets/images/image2.webp"
+
 import '../CSS/Footer.css'
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
@@ -13,7 +15,11 @@ const Footer = () => {
        <div className="footer-container">
 
     <div className="logo-container">
-        <img src={Logo2} alt="Company Logo" className="logo"/>
+    <img  src={Logo2}
+            srcSet={`${SmallCyber} 300w, ${MediumCyber} 600w, ${LargeCyber} 1200w`}
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
+            alt="Logo"
+            className="logo"/>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, laudantium accusantium! Voluptatem corrupti, quisquam numquam quo totam est, vel earum vitae delectus, sit possimus molestias! Dicta odit totam in nobis.</p>
     </div>
 

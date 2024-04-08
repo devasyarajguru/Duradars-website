@@ -1,4 +1,6 @@
 // Navbar.js
+// import Logo2 from "../assets/images/image2.webp"
+import {LargeCyber , MediumCyber , SmallCyber } from '../scripts/export';
 import Logo2 from "../assets/images/image2.webp"
 import { Link } from 'react-router-dom';
 import '../CSS/Navbar.css';
@@ -14,7 +16,12 @@ const Navbar = () => {
     <nav className="navbar">
       <div className='logo-container'>
       <Link to="/">
-          <img src={Logo2} alt="Logo2" className="logo"/>
+          <img  
+            src={Logo2}
+            srcSet={`${SmallCyber} 300w, ${MediumCyber} 600w, ${LargeCyber} 1200w`}
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
+            alt="Logo"
+            className="logo"/>
       </Link>
         </div>
 

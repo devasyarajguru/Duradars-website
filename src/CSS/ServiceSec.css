@@ -30,8 +30,8 @@
   }
   
   .service-item img {
-    width: 100%;
-    max-width: 350px;
+    /* width: 100%; */
+    max-width: 100%;
     height: auto;
     /* height: 200px; */
     max-height: 300px;
@@ -81,9 +81,9 @@
 
   @media (max-width: 768px) {
     .service-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
         gap: 10px; 
-        padding: 0 10px;
+        padding:10px;
     }
 
     .service-item {

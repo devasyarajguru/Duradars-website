@@ -4,8 +4,12 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import NotFound from "./Components/NotFound";
-import CyberImage from "./assets/cyber-image.webp";
+import CyberImage from "./assets/images/cyber-image.webp";
 import Spinner from "./Components/Spinner";
+// import {Cloudinary} from "@cloudinary/url-gen";
+// import {AdvancedImage} from '@cloudinary/react';
+// import {fill} from "@cloudinary/url-gen/actions/resize";
+// import { IKImage } from 'imagekitio-react';
 
 const Home = lazy(() => import( "./Components/Home")) ;
 const Contact = lazy(() => import("./Components/Contact"));
@@ -16,12 +20,26 @@ const Process = lazy(() => import("./Components/Process"));
 // import ServiceSec from './Components/ServiceSec';
 
 const App = () => {
+
+  // const cld = new Cloudinary({
+  //   cloud: {
+  //     cloudName: 'dfsgzn6lk'
+  //   }
+  // });
+
+  // const myImage = cld.image('docs/models'); 
+
+  // myImage.resize(fill().width(250).height(250));
+
+  // const urlEndpoint = 'https://ik.imagekit.io/rfvwiripg/';
+
   const siteProps = {
     HomeSec: {
       taglineJSX: <span className="span-head">Securing</span>,
       taglineText: " your peace of mind, one click 👆 at a time",
       paragraph: "Your paragraph goes here. Add some meaningful content.",
       image: CyberImage,
+      // image: new IKImage({ urlEndpoint, path: "default-image.jpg" }).toString()
     },
 
     AboutSec: {

@@ -1,19 +1,14 @@
 import Fade from 'react-reveal/Fade';
 import '../CSS/AboutSec.css'
 import { Link } from 'react-router-dom';
-import About1 from "../assets/images/about1.webp"
-import About2 from "../assets/images/about2.webp"
-import About3 from "../assets/images/about3.jpg"
+import { SmallAbout1, MediumAbout1, LargeAbout1, SmallAbout2, MediumAbout2, LargeAbout2, SmallAbout3 , MediumAbout3 , LargeAbout3 } from '../scripts/export';
 
 const AboutSec = () => {
 
   const AboutSecDetails =
   {
       title:'About Us',
-      paragraph:"We are dedicated to providing top-notch cybersecurity solutions to ensure the safety and tranquility of our clients. Our team of experts is committed to delivering excellence in every aspect of cybersecurity.",
-      image1:About1,
-      image2:About2,
-      image3:About3,
+      paragraph:"We are dedicated to providing top-notch cybersecurity solutions to ensure the safety and tranquility of our clients. Our team of experts is committed to delivering excellence in every aspect of cybersecurity."
   }
 
     return (
@@ -22,11 +17,32 @@ const AboutSec = () => {
       <div className="about-us-container">
         {/* Image Stack Container */}
       <div className="image-stack">
-        <img src={AboutSecDetails.image1} alt="Image 1" loading="lazy" className='about1-image'/>
-        <img src={AboutSecDetails.image2} alt="Image 2" loading="lazy" className='about2-image'/>
+        <img
+            src={SmallAbout1}
+            srcSet={`${SmallAbout1} 300w, ${MediumAbout1} 600w, ${LargeAbout1} 1200w`}
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
+            alt="About Image 1"
+            loading="lazy"
+            className='about1-image'
+        />
+       <img
+            src={SmallAbout2}
+            srcSet={`${SmallAbout2} 300w, ${MediumAbout2} 600w, ${LargeAbout2} 1200w`}
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
+            alt="About Image 2"
+            loading="lazy"
+            className='about2-image'
+          />
       </div>
         {/* Image Stack Container ends*/}
-      <img src={AboutSecDetails.image3} alt="Image 3" loading="lazy" className="side-image" />
+      <img
+            src={SmallAbout3}
+            srcSet={`${SmallAbout3} 300w, ${MediumAbout3} 600w, ${LargeAbout3} 1200w`}
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
+            alt="About Image 3"
+            loading="lazy"
+            className="side-image"
+          />
 
       {/* About Us Content */}
       <div className="about-us-content">

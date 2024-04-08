@@ -2,31 +2,10 @@
 import '../CSS/ServiceSec.css';
 import '../App.css'
 import Fade from 'react-reveal/Fade';
-import Service1 from "../assets/images/service1.webp"
-import Service2 from "../assets/images/service2.webp"
-import Service3 from "../assets/images/service3.webp"
-import Service4 from "../assets/images/service4.webp"
-import Service5 from "../assets/images/service5.webp"
-import Service6 from "../assets/images/service6.webp"
+import { Service1, Service2, Service3, Service4, Service5, Service6 } from '../scripts/export';
+import { SmallService1, SmallService2,SmallService3,SmallService4,SmallService5,SmallService6, MediumService1,  MediumService2, MediumService3, MediumService4, MediumService5, MediumService6,LargeService1, LargeService2,LargeService3, LargeService4, LargeService5, LargeService6 } from '../scripts/export';
+// Repeat the same for other images...
 
-import SmallService1 from "../assets/images/resized_images/service1-small.webp";
-import MediumService1 from "../assets/images/resized_images/service1-medium.webp";
-import LargeService1 from "../assets/images/resized_images/service1-large.webp";
-import SmallService2 from "../assets/images/resized_images/service2-small.webp";
-import MediumService2 from "../assets/images/resized_images/service2-medium.webp";
-import LargeService2 from "../assets/images/resized_images/service2-large.webp";
-import SmallService3 from "../assets/images/resized_images/service3-small.webp";
-import MediumService3 from "../assets/images/resized_images/service3-medium.webp";
-import LargeService3 from "../assets/images/resized_images/service3-large.webp";
-import SmallService4 from "../assets/images/resized_images/service4-small.webp";
-import MediumService4 from "../assets/images/resized_images/service4-medium.webp";
-import LargeService4 from "../assets/images/resized_images/service4-large.webp";
-import SmallService5 from "../assets/images/resized_images/service5-small.webp";
-import MediumService5 from "../assets/images/resized_images/service5-medium.webp";
-import LargeService5 from "../assets/images/resized_images/service5-large.webp";
-import SmallService6 from "../assets/images/resized_images/service6-small.webp";
-import MediumService6 from "../assets/images/resized_images/service6-medium.webp";
-import LargeService6 from "../assets/images/resized_images/service6-large.webp";
 import { Link } from 'react-router-dom';
 
 const ServiceSec = () => {
