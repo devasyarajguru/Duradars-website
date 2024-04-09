@@ -39,6 +39,30 @@ export { default as LargeAbout2 } from "../assets/images/resized_images/about2-l
 export { default as LargeAbout3 } from "../assets/images/resized_images/about3-large.webp";
 
 // Logo
-export { default as SmallCyber } from "../assets/images/resized_images/image2-small.webp";
-export { default as MediumCyber } from "../assets/images/resized_images/image2-medium.webp";
-export { default as LargeCyber } from "../assets/images/resized_images/image2-large.webp";
+export { default as SmallCyber } from "../assets/images/image2_small.webp";
+export { default as MediumCyber } from "../assets/images/image2_medium.webp";
+export { default as LargeCyber } from "../assets/images/image2_large.webp";
+
+
+// Hero Section
+export { default as SmallHero } from "../assets/images/resized_images/cyber-image-small.webp";
+export { default as MediumHero } from "../assets/images/resized_images/cyber-image-medium.webp";
+export { default as LargeHero } from "../assets/images/resized_images/cyber-image-large.webp";
+
+// Process Page
+export { default as SmallProcess1 } from "../assets/images/resized_images/process1-small.webp";
+export { default as SmallProcess2 } from "../assets/images/resized_images/process2-small.webp";
+export { default as SmallProcess3 } from "../assets/images/resized_images/process3-small.webp";
+export { default as SmallProcess4 } from "../assets/images/resized_images/process4-small.webp";
+export { default as MediumProcess1 } from "../assets/images/resized_images/process1-medium.webp";
+export { default as MediumProcess2 } from "../assets/images/resized_images/process2-medium.webp";
+export { default as MediumProcess3 } from "../assets/images/resized_images/process3-medium.webp";
+export { default as MediumProcess4 } from "../assets/images/resized_images/process4-medium.webp";
+export { default as LargeProcess1 } from "../assets/images/resized_images/process1-large.webp";
+export { default as LargeProcess2 } from "../assets/images/resized_images/process2-large.webp";
+export { default as LargeProcess3 } from "../assets/images/resized_images/process3-large.webp";
+export { default as LargeProcess4 } from "../assets/images/resized_images/process4-large.webp";
+
+
+
+
