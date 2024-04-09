@@ -6,7 +6,7 @@ import { useForm } from '@formspree/react';
 import ContactSec from "./ContactSec";
 import { ToastContainer, toast , Bounce} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-function Contact({ taglineJSX, taglineText, paragraph, image }) {
+function Contact({taglineJSX, taglineText , paragraph , image, smallImage , mediumImage , largeImage}) {
   const [state, formSubmit] = useForm("xvoekwrz");
  
   const [formData,setFormData] =  useState({
@@ -104,7 +104,7 @@ function Contact({ taglineJSX, taglineText, paragraph, image }) {
 <>
     {/* MainHero Content Starts*/}
 
-    {MainHero({ taglineJSX, taglineText, paragraph, image })}
+    {MainHero({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage})}
           
     {/* MainHero Content Ends*/}
      
@@ -128,6 +128,9 @@ Contact.defaultProps = {
     taglineText: "",
     paragraph: "",
     image: "",
+    smallImage:"",
+    mediumImage:"",
+    largeImage:""
   };
   
   Contact.propTypes = {
@@ -135,6 +138,9 @@ Contact.defaultProps = {
     taglineText: PropTypes.string.isRequired,
     paragraph: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
+    smallImage: PropTypes.string.isRequired,
+    mediumImage: PropTypes.string.isRequired,
+    largeImage: PropTypes.string.isRequired,
   };
 
 export default Contact;

@@ -7,7 +7,7 @@ import MainHero from "./MainHero";
 import ContactSec from "./ContactSec";
 import Why from "./Why";
 
-const AboutUs = ({ taglineJSX, taglineText, paragraph, image }) =>
+const AboutUs = ({ taglineJSX, taglineText, paragraph, image , smallImage , mediumImage , largeImage}) =>
 {
     const sectionDetails = [
         {
@@ -28,7 +28,7 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image }) =>
        <>
           {/* MainHero Content Starts*/}
 
-          {MainHero({ taglineJSX, taglineText, paragraph, image })}
+          {MainHero({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage})}
           
           {/* MainHero Content Ends*/}
 
@@ -70,6 +70,9 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image }) =>
         taglineText: "",
         paragraph: "",
         image: "",
+        smallImage:"",
+        mediumImage:"",
+        largeImage:""
       };
       
       AboutUs.propTypes = {
@@ -77,6 +80,9 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image }) =>
         taglineText: PropTypes.string.isRequired,
         paragraph: PropTypes.string.isRequired,
         image: PropTypes.string.isRequired,
+        smallImage: PropTypes.string.isRequired,
+        mediumImage: PropTypes.string.isRequired,
+        largeImage: PropTypes.string.isRequired,
       };
 
 export default AboutUs;

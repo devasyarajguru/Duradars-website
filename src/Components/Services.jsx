@@ -8,7 +8,7 @@ import Why from "./Why";
 import ContactSec from "./ContactSec";
 
 
-const Services = ({ taglineJSX, taglineText, paragraph, image }) => {
+const Services = ({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage }) => {
  
   const serviceDetails = [
     {
@@ -52,7 +52,7 @@ const Services = ({ taglineJSX, taglineText, paragraph, image }) => {
   return (
     <>
       {/* MainHero Content Starts*/}
-      {MainHero({ taglineJSX, taglineText, paragraph, image })}
+      {MainHero({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage})}
       {/* MainHero Content Ends*/}
 
       {/* Responsive Container Starts*/}
@@ -93,6 +93,9 @@ Services.defaultProps = {
   taglineText: "",
   paragraph: "",
   image: "",
+  smallImage:"",
+  mediumImage:"",
+  largeImage:""
 };
 
 Services.propTypes = {
@@ -100,6 +103,9 @@ Services.propTypes = {
   taglineText: PropTypes.string.isRequired,
   paragraph: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  smallImage: PropTypes.string.isRequired,
+  mediumImage: PropTypes.string.isRequired,
+  largeImage: PropTypes.string.isRequired,
 };
 
 export default Services;

@@ -5,14 +5,14 @@ import '../CSS/Career.css'
 import MainHero from "./MainHero";
 import { Link } from "react-router-dom";
 
-const Career = ({ taglineJSX, taglineText, paragraph, image }) =>
+const Career = ({taglineJSX, taglineText , paragraph , image, smallImage , mediumImage , largeImage}) =>
 {
 
   const message = "There are currently no open positions available"    
     return(
        <>
           {/* MainHero Content Starts*/}
-          {MainHero({ taglineJSX, taglineText, paragraph, image })}
+          {MainHero({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage})}
           {/* MainHero Content Ends*/}     
 
           <div className="no-openings-message">
@@ -30,6 +30,9 @@ const Career = ({ taglineJSX, taglineText, paragraph, image }) =>
         taglineText: "",
         paragraph: "",
         image: "",
+        smallImage:"",
+        mediumImage:"",
+        largeImage:""
       };
       
       Career.propTypes = {
@@ -37,6 +40,9 @@ const Career = ({ taglineJSX, taglineText, paragraph, image }) =>
         taglineText: PropTypes.string.isRequired,
         paragraph: PropTypes.string.isRequired,
         image: PropTypes.string.isRequired,
+        smallImage: PropTypes.string.isRequired,
+        mediumImage: PropTypes.string.isRequired,
+        largeImage: PropTypes.string.isRequired,
       };
 
 export default Career;

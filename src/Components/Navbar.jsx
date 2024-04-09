@@ -21,7 +21,8 @@ const Navbar = () => {
             srcSet={`${SmallCyber} 300w, ${MediumCyber} 600w, ${LargeCyber} 1200w`}
             sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
             alt="Logo"
-            className="logo"/>
+            className="logo"
+            loading="lazy"/>
       </Link>
         </div>
 

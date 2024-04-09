@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from "prop-types";
 import { useEffect,useRef } from 'react';
 
-const MainHero = ({ taglineJSX, taglineText, paragraph, image }) =>{
+const MainHero = ({ taglineJSX, taglineText, paragraph, image ,  smallImage , mediumImage , largeImage }) =>{
   const topRef = useRef();
 
   useEffect(() => {
@@ -29,7 +29,10 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image }) =>{
           <div className="hero-section-image">
             {/* Hero Section Image Starts */}
             <div className='hero-image'>
-              <img src={image} alt="Cyber-Image" className="svg-image slide-right"/>
+              <img src={image} alt="Cyber-Image" className="svg-image slide-right"
+               srcSet={`${smallImage} 300w, ${mediumImage} 600w, ${largeImage} 1200w`}
+               sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
+              />
             </div>
           </div>
           {/* Hero Section Image ends */}
@@ -44,6 +47,9 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image }) =>{
     taglineText: "",
     paragraph: "",
     image: "",
+    smallImage:"",
+    mediumImage:"",
+    largeImage:""
   };
   
   MainHero.propTypes = {
@@ -51,6 +57,9 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image }) =>{
     taglineText: PropTypes.string.isRequired,
     paragraph: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
+    smallImage: PropTypes.string.isRequired,
+    mediumImage: PropTypes.string.isRequired,
+    largeImage: PropTypes.string.isRequired,
   };
  export default MainHero;
   
