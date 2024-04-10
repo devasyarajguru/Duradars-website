@@ -29,10 +29,15 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image ,  smallImage , me
           <div className="hero-section-image">
             {/* Hero Section Image Starts */}
             <div className='hero-image'>
+              <picture>
+                <source  srcSet={`${smallImage} 300w, ${mediumImage} 600w, ${largeImage} 1200w`}
+               sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"/>
               <img src={image} alt="Cyber-Image" className="svg-image slide-right"
-               srcSet={`${smallImage} 300w, ${mediumImage} 600w, ${largeImage} 1200w`}
-               sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
+               width={1200}
+               height={675}
               />
+              </picture>
+              
             </div>
           </div>
           {/* Hero Section Image ends */}
