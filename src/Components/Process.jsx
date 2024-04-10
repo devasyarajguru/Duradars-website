@@ -69,11 +69,16 @@ const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , medi
             <Fade key={index} bottom distance="30%" duration={2500}>
             <section className={`process-container ${process.order !== 2 ? 'reverse' : ''}`}>
             <div className="image-div">
+              <picture>
+                <source srcSet={`${process.smallImg} 300w, ${process.mediumImg} 600w, ${process.largeImg} 1200w`}
+              sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"/>
               <img src={process.photoSrc} alt={`Process ${process.order}`} className="process-image"
-              loading="lazy" style={{width:"350px" , height:"200px"}}
-              srcSet={`${process.smallImg} 300w, ${process.mediumImg} 600w, ${process.largeImg} 1200w`}
-              sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
+              loading="lazy"
+              width={1200}
+              height={675}
               />
+              </picture>
+              
             </div>
             <div className="text-content">
               <h3 className="text-heading">{process.heading}</h3>
