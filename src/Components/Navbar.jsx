@@ -16,13 +16,18 @@ const Navbar = () => {
     <nav className="navbar">
       <div className='logo-container'>
       <Link to="/">
-          <img  
+        <picture>
+          <source srcSet={`${SmallCyber} 300w, ${MediumCyber} 600w, ${LargeCyber} 1200w`}
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"/>
+        <img  
             src={Logo2}
-            srcSet={`${SmallCyber} 300w, ${MediumCyber} 600w, ${LargeCyber} 1200w`}
-            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
             alt="Logo"
             className="logo"
-            loading="lazy"/>
+            width={500}
+            height={187}
+            />
+        </picture>
+          
       </Link>
         </div>
 
