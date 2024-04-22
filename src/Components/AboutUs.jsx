@@ -13,14 +13,14 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image , smallImage , medi
         {
           imgSrc: 'https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eaboutus1.svg',
           heading: 'Our Mission',
-          subHeading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in ullamcorper quis vestibulum ligula elementum ut.',
+          subHeading: 'Our Commitment to Excellence',
+          description: 'At Duradars, our mission is clear: to empower individuals and businesses with innovative cybersecurity solutions. We are committed to excellence in everything we do, ensuring our clients can navigate the digital landscape with confidence and peace of mind.',
         },
         {
           imgSrc: 'https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/xpraup2.svg',
           heading: 'Our Vision',
-          subHeading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in ullamcorper quis vestibulum ligula elementum ut.',
+          subHeading: 'Leading the Way Towards a Secure Tomorrow',
+          description: 'Our vision at Duradars is ambitious yet straightforward: to shape the future of cybersecurity. We strive to lead the way towards a secure tomorrow by setting new standards of excellence and innovation in the industry. With a focus on collaboration, integrity, and cutting-edge technology, we aim to create a safer digital world for all.',
         },
       ];
 
