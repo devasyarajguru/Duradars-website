@@ -49,6 +49,28 @@ export { default as SmallHero } from "../assets/images/resized_images/cyber-imag
 export { default as MediumHero } from "../assets/images/resized_images/cyber-image-medium.webp";
 export { default as LargeHero } from "../assets/images/resized_images/cyber-image-large.webp";
 
+export { default as SmallHero2 } from "../assets/images/resized_images/hero2-small.webp";
+export { default as MediumHero2 } from "../assets/images/resized_images/hero2-medium.webp";
+export { default as LargeHero2 } from "../assets/images/resized_images/hero2-large.webp";
+
+export { default as SmallHero3 } from "../assets/images/resized_images/hero3-small.webp";
+export { default as MediumHero3 } from "../assets/images/resized_images/hero3-medium.webp";
+export { default as LargeHero3 } from "../assets/images/resized_images/hero3-large.webp";
+
+export { default as SmallHero4 } from "../assets/images/resized_images/hero4-small.webp";
+export { default as MediumHero4 } from "../assets/images/resized_images/hero4-medium.webp";
+export { default as LargeHero4 } from "../assets/images/resized_images/hero4-large.webp";
+
+export { default as SmallHero5 } from "../assets/images/resized_images/hero5-small.webp";
+export { default as MediumHero5 } from "../assets/images/resized_images/hero5-medium.webp";
+export { default as LargeHero5 } from "../assets/images/resized_images/hero5-large.webp";
+
+export { default as SmallHero6 } from "../assets/images/resized_images/hero6-small.webp";
+export { default as MediumHero6 } from "../assets/images/resized_images/hero6-medium.webp";
+export { default as LargeHero6 } from "../assets/images/resized_images/hero6-large.webp";
+
+
+
 // Process Page
 export { default as SmallProcess1 } from "../assets/images/resized_images/process1-small.webp";
 export { default as SmallProcess2 } from "../assets/images/resized_images/process2-small.webp";
