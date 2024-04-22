@@ -18,8 +18,8 @@ const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , medi
       const processes = [
         {
           order:1,
-          heading: 'Process 1',
-          Mainparagraph: 'Lorem ipsum for process 1.',
+          heading: 'Analysis',
+          Mainparagraph: "Our analysis process involves a thorough examination of your organization's systems, networks, and applications to identify potential security risks and vulnerabilities.",
           photoSrc: ProcessImage,
           smallImg:SmallProcess1,
           mediumImg:MediumProcess1,
@@ -27,8 +27,8 @@ const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , medi
         },
         {
           order:2,
-          heading: 'Process 2',
-          Mainparagraph: 'Lorem ipsum for process 2.',
+          heading: 'Planning',
+          Mainparagraph: "During the planning phase, we work closely with your team to develop comprehensive cybersecurity plans and strategies tailored to your organization's unique needs and objectives.",
           photoSrc: ProcessImage2,
           smallImg:SmallProcess2,
           mediumImg:MediumProcess2,
@@ -36,8 +36,8 @@ const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , medi
         },
         {
           order:1,
-          heading: 'Process 3',
-          Mainparagraph: 'Lorem ipsum for process 2.',
+          heading: 'Implementation',
+          Mainparagraph: "With our implementation process, we put our cybersecurity plans into action, deploying security controls, technologies, and protocols to mitigate risks and strengthen your organization's defenses against cyber threats.",
           photoSrc: ProcessImage3,
           smallImg:SmallProcess3,
           mediumImg:MediumProcess3,
@@ -45,8 +45,8 @@ const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , medi
         },
         {
           order:2,
-          heading: 'Process 4',
-          Mainparagraph: 'Lorem ipsum for process 2.',
+          heading: 'Continous Monitoring',
+          Mainparagraph: "Our continuous monitoring process involves ongoing surveillance and analysis of your systems and networks to detect and respond to security incidents in real-time. ",
           photoSrc: ProcessImage4,
           smallImg:SmallProcess4,
           mediumImg:MediumProcess4,
@@ -82,7 +82,7 @@ const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , medi
             </div>
             <div className="text-content">
               <h3 className="text-heading">{process.heading}</h3>
-              <p>{paragraph}</p>
+              <p className="text-heading-para">{process.Mainparagraph}</p>
             </div>
           </section>
           </Fade>
