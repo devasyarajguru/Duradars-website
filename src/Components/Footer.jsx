@@ -27,7 +27,7 @@ const Footer = () => {
             height={187}
             />
         </picture>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, laudantium accusantium! Voluptatem corrupti, quisquam numquam quo totam est, vel earum vitae delectus, sit possimus molestias! Dicta odit totam in nobis.</p>
+        <p>At Duradars, we are dedicated to empowering businesses with robust cybersecurity solutions tailored to their unique needs. With a focus on innovation, reliability, and customer satisfaction, we strive to exceed expectations and deliver peace of mind in an ever-evolving digital landscape. </p>
     </div>
 
       <div className="footer-nav">
@@ -40,9 +40,9 @@ const Footer = () => {
       </div>
 
       <div className="contact-info">
-        <p><MdEmail className='footer-icons'/> contact@example.com</p>
-        <p><FaPhone className='footer-icons'/> +123 456 7890</p>
-        <p><FaAddressCard className='footer-icons'/> 123 Main Street, City</p>
+        <p><MdEmail className='footer-icons'/> duradars@gmail.com</p>
+        <p><FaPhone className='footer-icons'/> +91 9601130211</p>
+        <p><FaAddressCard className='footer-icons'/> Remote</p>
 
         <div className='cta'>
           <Link to="/contact">
@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
       
       <div className="copyright">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 Duradars. All rights reserved.</p>
       </div>
     {/* Footer Container ends*/}
 
