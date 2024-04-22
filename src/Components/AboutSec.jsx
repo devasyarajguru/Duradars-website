@@ -8,7 +8,7 @@ const AboutSec = () => {
   const AboutSecDetails =
   {
       title:'About Us',
-      paragraph:"We are dedicated to providing top-notch cybersecurity solutions to ensure the safety and tranquility of our clients. Our team of experts is committed to delivering excellence in every aspect of cybersecurity."
+      paragraph:"We are dedicated to providing top-notch cybersecurity solutions to ensure the safety and tranquility of our clients."
   }
 
     return (
