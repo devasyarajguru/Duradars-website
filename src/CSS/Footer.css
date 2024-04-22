@@ -19,6 +19,7 @@
 }
 
 .logo-container p{
+  width: 30rem;
   margin-top:20px;
   font-family: 'Open Sans', sans-serif;
   text-align:left;
