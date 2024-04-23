@@ -62,7 +62,7 @@ const ServiceSec = () => {
     ]
   }
   return (
-    <Fade bottom distance="30%" duration={2500}>
+    <Fade  bottom distance="20%" duration={1000}>
     {/*  <Fade bottom distance="30%"  duration={2500}> */}
     <section className="service-home-container">
       <h2 className="section-title">{SecDetail.title}</h2>

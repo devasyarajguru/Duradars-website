@@ -35,7 +35,7 @@ const Why = () => {
     ]
   }
   return (
-    <Fade bottom distance="30%"  duration={2500}>
+    <Fade bottom distance="20%" duration={1000}>
       {/* Why Container */}
     <section className="why-container">
       <h2>{WhyDetails.mainTitle}</h2>

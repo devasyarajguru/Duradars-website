@@ -38,7 +38,7 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image , smallImage , medi
         {/* Responsive Container Starts*/}
         <div className="responsive-container-block bigContainer">
       {sectionDetails.map((section, index) => (
-        <Fade key={index} bottom distance="30%" duration={2500}>
+        <Fade key={index} bottom distance="20%" duration={1000}>
           <div className={`responsive-container-block Container ${index === 1 ? 'bottomContainer' : ''}`}>
             <img className="mainImg" src={section.imgSrc} alt={`Section ${index + 1}`} />
             <div className="allText aboveText">

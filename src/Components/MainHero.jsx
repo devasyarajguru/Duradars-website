@@ -18,7 +18,7 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image ,  smallImage , me
         <div className="content-container fade-in">
           {/* Hero Section content Starts */}
           <div className="hero-section-content">
-            <h2 className="tagline slide-left">{taglineJSX}{taglineText}</h2>
+            <h1 className="tagline slide-left">{taglineJSX}{taglineText}</h1>
             <p className="paragraph slide-left">{paragraph}</p>
             <Link to="/contact">
               <button className="custom-button slide-left">Contact Us</button>

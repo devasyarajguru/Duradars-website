@@ -66,7 +66,7 @@ const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , medi
         {/* Main Process container starts */}
         
           {processes.map((process,index) =>(
-            <Fade key={index} bottom distance="30%" duration={2500}>
+            <Fade key={index} bottom distance="20%" duration={1000}>
             <section className={`process-container ${process.order !== 2 ? 'reverse' : ''}`}>
             <div className="image-div">
               <picture>
@@ -90,11 +90,11 @@ const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , medi
       
         {/* Main Process container Ends */}
           
-        <div style={{marginTop:"150px"}}>
+        <div style={{marginTop:"50px"}}>
           <Why/>
         </div>
 
-        <div style={{marginTop:"150px"}}>
+        <div style={{marginTop:"50px"}}>
           <ContactSec />
         </div>
      </>

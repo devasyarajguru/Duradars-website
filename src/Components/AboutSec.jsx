@@ -12,7 +12,7 @@ const AboutSec = () => {
   }
 
     return (
-      <Fade bottom distance="30%"  duration={2500}>
+      <Fade bottom distance="20%" duration={1000}>
         {/* About Us Container */}
       <div className="about-us-container">
         {/* Image Stack Container */}

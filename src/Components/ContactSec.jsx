@@ -6,7 +6,7 @@ const ContactSec = ({ formData, handleChange, handleSubmit, errors }) => {
   return (
     <>
     {/* Contact main Container starts */}
-    <Fade bottom distance="30%"  duration={1500}>
+    <Fade  bottom distance="20%" duration={1000}>
 
     <div className="formbold-main-wrapper">
   <div className="formbold-form-wrapper">
