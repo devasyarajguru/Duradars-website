@@ -14,6 +14,17 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.process-heading
+{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #b3245c;
+    padding: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .process-image {
   width: 100%;
     max-width: 450px;
@@ -46,7 +57,7 @@
 }
 
 /* Mobile Devices (max-width: 480px) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .process-container {
     flex-direction: column;
     align-items: center;
@@ -58,51 +69,76 @@
   
   .text-heading
   {
+    font-size: 1.25rem;
     text-align: center;
     margin-top: 1rem;
   }
 
   .text-content p
   {
+    font-size: 1rem;
+    line-height: 1.5rem;
     text-align: center;
-    width: 90%;
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 
 /* iPads, Tablets (481px to 786px) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+/* @media only screen and (min-width: 481px) and (max-width: 768px) {
   .process-container {
-    max-width: 90%;
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
   }
   .process-image {
-    max-width: 400px; 
-    height: 250px; 
+   width: 100%;
+   height: auto;
   }
   .text-content
   {
+    text-align: left;
     margin-left: 5%;
   }
-  .text-heading {
-    font-size: 1.1em; 
+  .text-heading
+  {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 1rem;
   }
-}
 
-/* Small Screens, Laptops (769px to 1024px) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .text-content p
+  {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+} */
+
+ @media only screen and (min-width: 768px){
   .process-container {
-    max-width: 90%;
+    max-width: 100%;
   }
   .process-image {
-    max-width: 450px; 
-    height: 280px; 
+    width: 100%;
+    height: auto;
   }
   .text-heading {
-    font-size: 1.2em; 
+    font-size: 1.625rem; 
   }
 
   .text-content
   {
+    width: 50%;
     margin-left: 5%;
+    font-size: 1rem;
+  }
+
+  .text-heading-para
+  {
+    width: 80%;
   }
 }
 
@@ -116,11 +152,13 @@
     height: 320px; 
   }
   .text-heading {
-    font-size: 1.3em;
+    font-size: 1.625rem; 
   }
 
   .text-content
   {
+    width: 50%;
     margin-left: 5%;
+    font-size: 1rem;
   }
 }
