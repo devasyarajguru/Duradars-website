@@ -18,7 +18,7 @@ const Why = () => {
         paragraph:"Our team is available round the clock to provide you with immediate support and assistance. You can rely on us to address your concerns and resolve any issues promptly."
       },
       {
-        title:"Customized Solutions",
+        title:"Solutions",
         icon: <AiOutlineSolution  className='support'/>,
         paragraph:"We understand that every business is unique, which is why we offer customized solutions tailored to your specific needs. Our team works closely with you to develop strategies that align with your goals and objectives."
       },

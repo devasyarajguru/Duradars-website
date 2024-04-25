@@ -64,7 +64,7 @@ const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , medi
          {/* MainHero Content Ends*/}
 
         {/* Main Process container starts */}
-        
+        <h2 className="process-heading">Our Process</h2>
           {processes.map((process,index) =>(
             <Fade key={index} bottom distance="20%" duration={1000}>
             <section className={`process-container ${process.order !== 2 ? 'reverse' : ''}`}>
