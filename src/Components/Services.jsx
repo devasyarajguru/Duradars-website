@@ -5,7 +5,7 @@ import { Fade } from "react-reveal";
 import { MdSecurity } from "react-icons/md";
 import MainHero from "./MainHero";
 import Why from "./Why";
-import ContactSec from "./ContactSec";
+import UseForm from "./UseFrom";
 
 
 const Services = ({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage }) => {
@@ -80,7 +80,7 @@ const Services = ({ taglineJSX, taglineText, paragraph, image, smallImage , medi
         </div>
 
         <div style={{ marginTop: "50px" }}>
-          <ContactSec />
+          <UseForm />
         </div>
       </div>
 

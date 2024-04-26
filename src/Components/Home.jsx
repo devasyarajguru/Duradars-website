@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import AboutHome from './AboutSec';
 import ServiceSec from './ServiceSec';
-import ContactSec from './ContactSec';
 import Why from './Why';
 // import { Link } from 'react-router-dom';
 import '../CSS/Home.css'
 import MainHero from "./MainHero";
+import UseForm from "./UseFrom";
 
 
 const Home = ({taglineJSX, taglineText , paragraph , image, smallImage , mediumImage , largeImage}) =>
@@ -33,7 +33,7 @@ const Home = ({taglineJSX, taglineText , paragraph , image, smallImage , mediumI
         </div>
         
         <div style={{marginTop:"50px"}}>
-          <ContactSec />
+          <UseForm />
         </div>
 
       </div>

@@ -4,8 +4,8 @@ import '../CSS/About.css'
 import { Fade } from "react-reveal";
 import MainHero from "./MainHero";
 // import AboutSec from "./AboutSec";
-import ContactSec from "./ContactSec";
 import Why from "./Why";
+import UseForm from "./UseFrom";
 
 const AboutUs = ({ taglineJSX, taglineText, paragraph, image , smallImage , mediumImage , largeImage}) =>
 {
@@ -58,7 +58,7 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image , smallImage , medi
         </div>
 
         <div style={{ marginTop:"50px"}}>
-          <ContactSec />
+          <UseForm />
         </div>
 
        </div>
