@@ -1,4 +1,5 @@
 import "./App.css";
+// import { Helmet } from 'react-helmet';
 import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
@@ -87,6 +88,13 @@ const App = () => {
   };
 
   return (
+    <>
+    {/* <Helmet>
+      <link rel="preload" href={CyberImage} as='image'/>
+      <link rel="preload" href={SmallHero} as='image'/>
+      <link rel="preload" href={MediumHero} as='image'/>
+      <link rel="preload" href={LargeHero} as='image'/>
+    </Helmet> */}
     <div id="main">
       <Navbar />
       <Suspense fallback={<Spinner />}>
@@ -115,6 +123,7 @@ const App = () => {
       <Footer />
       </Suspense>
     </div>
+    </>
   );
 };
 

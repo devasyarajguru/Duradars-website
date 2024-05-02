@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import PropTypes from "prop-types";
 import { useEffect,useRef } from 'react';
+import { Helmet } from 'react-helmet';
 
 const MainHero = ({ taglineJSX, taglineText, paragraph, image ,  smallImage , mediumImage , largeImage }) =>{
   const topRef = useRef();
@@ -10,6 +11,36 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image ,  smallImage , me
     topRef.current.scrollIntoView({behavior: "smooth"});
   }, []);
   return(
+    <>
+      <Helmet>
+  <link rel="preload" href="../assets/images/cyber-image.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/cyber-image-small.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/cyber-image-medium.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/cyber-image-large.webp" as="image" />
+
+  <link rel="preload" href="../assets/images/resized_images/hero2-small.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/hero2-medium.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/hero2-large.webp" as="image" />
+
+  <link rel="preload" href="../assets/images/resized_images/hero3-small.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/hero3-medium.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/hero3-large.webp" as="image" />
+
+  <link rel="preload" href="../assets/images/resized_images/hero4-small.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/hero4-medium.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/hero4-large.webp" as="image" />
+
+  <link rel="preload" href="../assets/images/resized_images/hero5-small.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/hero5-medium.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/hero5-large.webp" as="image" />
+
+  <link rel="preload" href="../assets/images/resized_images/hero6-small.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/hero6-medium.webp" as="image" />
+  <link rel="preload" href="../assets/images/resized_images/hero6-large.webp" as="image" />
+
+</Helmet>
+
+
     <section className='main-home-container' id='main-home-container'>
       <div className="background-svg"></div>
       <div ref={topRef}></div>
@@ -38,14 +69,15 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image ,  smallImage , me
                height={675}
               />
               </picture>
-              
             </div>
+            
           </div>
           {/* Hero Section Image ends */}
         </div>
       </div>
       {/* Content Container Ends */}
     </section>
+    </>
   )
 }
   MainHero.defaultProps = {
