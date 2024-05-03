@@ -21,7 +21,6 @@ const AboutSec = () => {
           < source srcSet={`${SmallAbout1} 300w, ${MediumAbout1} 600w, ${LargeAbout1} 1200w`}
             sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"/>
         <img
-            fetchpriority="low"
             src={SmallAbout1}
             alt="About Image 1"
             loading="lazy"
@@ -35,7 +34,6 @@ const AboutSec = () => {
           <source  srcSet={`${SmallAbout2} 300w, ${MediumAbout2} 600w, ${LargeAbout2} 1200w`}
             sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"/>
           <img
-            fetchpriority="low"
             src={SmallAbout2}
             alt="About Image 2"
             loading="lazy"
@@ -52,7 +50,6 @@ const AboutSec = () => {
             srcSet={`${SmallAbout3} 300w, ${MediumAbout3} 600w, ${LargeAbout3} 1200w`}
             sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"/>
         <img
-            fetchpriority="low"
             src={SmallAbout3}
             alt="About Image 3"
             loading="lazy"
