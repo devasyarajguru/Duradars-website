@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import PropTypes from "prop-types";
 import { useEffect,useRef } from 'react';
-// import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 const MainHero = ({ taglineJSX, taglineText, paragraph, image ,  smallImage , mediumImage , largeImage }) =>{
   const topRef = useRef();
@@ -11,7 +11,7 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image ,  smallImage , me
   }, []);
   return(
     <>
-      {/* <Helmet>
+      <Helmet>
   <link rel="preload" href="../assets/images/cyber-image.webp" as="image" />
   <link rel="preload" href="../assets/images/resized_images/cyber-image-small.webp" as="image" />
   <link rel="preload" href="../assets/images/resized_images/cyber-image-medium.webp" as="image" />
@@ -37,7 +37,7 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image ,  smallImage , me
   <link rel="preload" href="../assets/images/resized_images/hero6-medium.webp" as="image" />
   <link rel="preload" href="../assets/images/resized_images/hero6-large.webp" as="image" />
 
-</Helmet> */}
+</Helmet>
 
 
     <section className='main-home-container' id='main-home-container'>
