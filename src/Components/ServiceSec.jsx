@@ -73,7 +73,7 @@ const ServiceSec = () => {
             <div className="service-item" key={service.service}>
               <Link to="/services">
 
-                <img src={service.img} alt="Services" loading="lazy" style={{width:"350px" , height:"200px"}}
+                <img fetchpriority="low" src={service.img} alt="Services" loading="lazy" style={{width:"350px" , height:"200px"}}
                 srcSet={`${service.smallImg} 300w, ${service.mediumImg} 600w, ${service.largeImg} 1200w`}
                 sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
                 />
