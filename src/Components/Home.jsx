@@ -20,7 +20,7 @@ const Home = ({taglineJSX, taglineText , paragraph , image, smallImage , mediumI
 
       <div className="mainSec-div">
 
-        <div style={{marginBottom:"50px", marginTop:"50px"}}>
+        <div style={{marginBottom:"50px", marginTop:"150px"}}>
           <AboutHome />
         </div>
 

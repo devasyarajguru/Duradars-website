@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  /* height:80vh; */
   /* background-image: url('../assets/images/bg-svg.svg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -378,6 +379,14 @@
   }
 }
 
+
+@media (min-width:1200px)
+{
+  .tagline
+  {
+    font-size: 4rem;
+  }
+}
 
 
 
