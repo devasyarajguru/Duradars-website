@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet';
 
 const MainHero = ({ taglineJSX, taglineText, paragraph, image ,  smallImage , mediumImage , largeImage }) =>{
   const topRef = useRef();
-
   useEffect(() => {
     topRef.current.scrollIntoView({behavior: "smooth"});
   }, []);
@@ -64,7 +63,7 @@ const MainHero = ({ taglineJSX, taglineText, paragraph, image ,  smallImage , me
               <picture>
                 <source  srcSet={`${smallImage} 300w, ${mediumImage} 600w, ${largeImage} 1200w`}
                sizes="(max-width: 480px) 100vw, (max-width: 768px) 70vw, 60vw"/>
-              <img src={image} alt="Cyber-Image" className="svg-image slide-right"
+              <img fetchpriority="high" src={image} alt="Cyber-Image" className="svg-image slide-right"
                width={1200}
                height={675}
               />
