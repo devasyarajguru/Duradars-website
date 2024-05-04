@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
+import LazyCritical from './LazyCritical'
 
 const MainHero = ({
   taglineJSX,
@@ -126,12 +127,15 @@ const MainHero = ({
           href="../CSS/Home.css" 
         />  
 
+         {/* Lazy load non-critical CSS */}
+      <LazyCritical />
+
         {/* Increase priority for fonts to load fonts right after the first render  */}
-      <link rel="preload"
+      {/* <link rel="preload"
       as="style"
       fetchpriority="high" 
       onLoad="this.onload=null;this.rel='stylesheet'"
-      href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'/>
+      href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'/> */}
       
       </Helmet>
 
