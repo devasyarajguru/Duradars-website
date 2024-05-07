@@ -48,7 +48,7 @@ const MainHero = ({
                 <picture>
                   <source
                     srcSet={`${smallImage} 300w, ${mediumImage} 600w, ${largeImage} 1200w`}
-                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 70vw, 60vw"
+                    sizes="(max-width: 480px) 81vw, (max-width: 768px) 70vw, 60vw"
                   />
                   <img
                     fetchpriority="high"
