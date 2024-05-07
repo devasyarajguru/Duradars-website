@@ -79,7 +79,7 @@ const ServiceSec = () => {
                 />
                 </Link>
                   <h2>{service.service}</h2>
-              <Link to="/services#main-home-container" className="custom-button2">{SecDetail.button}</Link>
+              <Link to="/services#main-home-container" className="custom-button2">Learn More</Link>
             </div>
           ))}
       </div>
