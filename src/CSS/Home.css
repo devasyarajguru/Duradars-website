@@ -119,8 +119,8 @@
 .custom-button:hover
 {
   background-color:#a21e53;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 
 .svg-image
