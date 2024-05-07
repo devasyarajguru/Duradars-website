@@ -1,12 +1,4 @@
 /* Footer.css */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap') format('woff2');
-  font-display: swap;
-}
-
 .footer-container {
   background-color: #b3245c;
   color: #fff;
