@@ -2,8 +2,8 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
-import { Helmet } from "react-helmet";
-import LazyCritical from './LazyCritical'
+// import { Helmet } from "react-helmet";
+// import LazyCritical from './LazyCritical'
 
 const MainHero = ({
   taglineJSX,
@@ -20,124 +20,7 @@ const MainHero = ({
   }, []);
   return (
     <>
-      <Helmet>
-        <link
-          rel="preload"
-          href="../assets/images/cyber-image.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/cyber-image-small.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/cyber-image-medium.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/cyber-image-large.webp"
-          as="image"
-        />
-
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero2-small.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero2-medium.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero2-large.webp"
-          as="image"
-        />
-
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero3-small.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero3-medium.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero3-large.webp"
-          as="image"
-        />
-
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero4-small.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero4-medium.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero4-large.webp"
-          as="image"
-        />
-
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero5-small.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero5-medium.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero5-large.webp"
-          as="image"
-        />
-
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero6-small.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero6-medium.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="../assets/images/resized_images/hero6-large.webp"
-          as="image"
-        />
-
-        <link 
-          rel="stylesheet" 
-          href="../CSS/Home.css" 
-        />  
-
-         {/* Lazy load non-critical CSS */}
-      <LazyCritical />
-
-        {/* Increase priority for fonts to load fonts right after the first render  */}
-      {/* <link rel="preload"
-      as="style"
-      fetchpriority="high" 
-      onLoad="this.onload=null;this.rel='stylesheet'"
-      href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'/> */}
       
-      </Helmet>
 
       <section className="main-home-container" id="main-home-container">
         <div className="background-svg"></div>
