@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap') format('woff2');
+}
+
 .navbar {
     background-color: #b3245c; 
     display: flex;
@@ -97,7 +118,6 @@
    width:100%;
 }
 }
-
 
 @media (max-width: 768px) {
   

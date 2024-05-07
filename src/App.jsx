@@ -58,7 +58,7 @@ const App = () => {
 
     ProcessSec: {
       taglineJSX: <span className="span-head">Streamlined Security</span>,
-      taglineText: " Processes for Optimal Protection",
+      taglineText: " Processes for  Protection",
       paragraph: "Our approach to cybersecurity is built on robust processes and methodologies. Discover our process and experience peace of mind.",
       image: hero4,
       smallImage:SmallHero4,

@@ -84,39 +84,6 @@
   }
 }
 
-/* iPads, Tablets (481px to 786px) */
-/* @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .process-container {
-    max-width: 100%;
-    flex-direction: column;
-    display: flex;
-  }
-  .process-image {
-   width: 100%;
-   height: auto;
-  }
-  .text-content
-  {
-    text-align: left;
-    margin-left: 5%;
-  }
-  .text-heading
-  {
-    font-size: 1.25rem;
-    text-align: center;
-    margin-top: 1rem;
-  }
-
-  .text-content p
-  {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-} */
-
  @media only screen and (min-width: 768px){
   .process-container {
     max-width: 100%;

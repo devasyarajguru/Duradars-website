@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
 .about-us-container {
   display: flex;
   justify-content: space-between;
@@ -104,7 +102,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
 }
-
 
 /* Media Queries */
 @media (max-width: 768px) {

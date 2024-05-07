@@ -1,23 +1,23 @@
 /* Home.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap') format('woff2');
+}
 
 .main-home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  /* height:80vh; */
-  /* background-image: url('../assets/images/bg-svg.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 
 /* Apply SVG as a background */
 .background-svg {
   opacity: 0.5;
   position: absolute;
-  top: 15px;
+  top: -10px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -27,7 +27,6 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 .content-container{
   display:flex;
@@ -182,7 +181,6 @@
   width: 100%;
   height:auto;
 }
-
 }
 
 @media (min-width:540px) and (max-width:768px) {
@@ -329,10 +327,7 @@
     width: 100%;
     height: auto;
   }
-
-  
 }
-
 
 @media (min-width: 1025px) and (max-width: 1200px) {
   
@@ -378,7 +373,6 @@
     height: auto;
   }
 }
-
 
 @media (min-width:1200px)
 {
