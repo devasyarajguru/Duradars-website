@@ -38,7 +38,7 @@ const App = () => {
 
     AboutSec: {
       taglineJSX: <span className="span-head">Empowering Security</span>,
-      taglineText: " in a Connected World 🌐",
+      taglineText: " in a Connected World",
       paragraph: "At Duradars, we empower businesses and individuals to navigate the digital landscape securely. Trust us to safeguard your digital journey.",
       image: hero2,
       smallImage:SmallHero2,
