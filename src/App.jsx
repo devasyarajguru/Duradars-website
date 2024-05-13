@@ -5,12 +5,12 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import NotFound from "./Components/NotFound";
-import CyberImage from "./assets/images/cyber-image.webp";
-import hero2 from "./assets/images/hero2.webp";
-import hero3 from "./assets/images/hero3.webp";
-import hero4 from "./assets/images/hero4.webp";
-import hero5 from "./assets/images/hero5.webp";
-import hero6 from "./assets/images/hero6.webp";
+import CyberImage from "./assets/images/my-hero1.webp";
+import hero2 from "./assets/images/my-hero2.webp";
+import hero3 from "./assets/images/my-hero3.webp";
+import hero4 from "./assets/images/my-hero4.webp";
+import hero5 from "./assets/images/my-hero5.webp";
+import hero6 from "./assets/images/my-hero6.webp";
 import Spinner from "./Components/Spinner";
 import { SmallHero , MediumHero , LargeHero , SmallHero2 , SmallHero3 , SmallHero4 , SmallHero5 , SmallHero6 , MediumHero2 , MediumHero3 , MediumHero4 , MediumHero5 , MediumHero6 , LargeHero2 , LargeHero3 , LargeHero4 , LargeHero5 , LargeHero6} from './scripts/export';
 
@@ -30,10 +30,10 @@ const App = () => {
       taglineJSX: <span className="span-head">Securing</span>,
       taglineText: " your peace of mind, one click 👆 at a time",
       paragraph: "Welcome to Duradars, your trusted partner in cybersecurity. Explore our services and empower your online presence with confidence.",
-      image: CyberImage,
-      smallImage:SmallHero,
-      mediumImage:MediumHero,
-      largeImage:LargeHero
+      image: hero4,
+      smallImage:SmallHero4,
+      mediumImage:MediumHero4,
+      largeImage:LargeHero4
     },
 
     AboutSec: {
@@ -60,10 +60,10 @@ const App = () => {
       taglineJSX: <span className="span-head">Streamlined Security</span>,
       taglineText: " Processes for  Protection",
       paragraph: "Our approach to cybersecurity is built on robust processes and methodologies. Discover our process and experience peace of mind.",
-      image: hero4,
-      smallImage:SmallHero4,
-      mediumImage:MediumHero4,
-      largeImage:LargeHero4
+      image: CyberImage,
+      smallImage:SmallHero,
+      mediumImage:MediumHero,
+      largeImage:LargeHero
     },
 
     CareerSec: {
