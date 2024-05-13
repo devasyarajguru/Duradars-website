@@ -36,9 +36,15 @@ const MainHero = ({
                 {taglineText}
               </h1>
               <p className="paragraph slide-left">{paragraph}</p>
-              <Link to="/contact">
+              {/* <Link to="/contact">
                 <button className="custom-button slide-left" style={{fontSize:"24px" , width: '200px', height: '50px', padding: '10px 20px'}}>Contact</button>
+              </Link> */}
+              <div style={{marginTop:"1.5rem"}}>
+              <Link to="/contact" className="custom-button slide-left" >
+                Contact
               </Link>
+              </div>
+
             </div>
             {/* Hero Section content Ends */}
 
