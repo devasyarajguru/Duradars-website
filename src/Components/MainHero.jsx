@@ -37,7 +37,7 @@ const MainHero = ({
               </h1>
               <p className="paragraph slide-left">{paragraph}</p>
               <Link to="/contact">
-                <button className="custom-button slide-left">Contact</button>
+                <button className="custom-button slide-left" style={{fontSize:"24px"}}>Contact</button>
               </Link>
             </div>
             {/* Hero Section content Ends */}
