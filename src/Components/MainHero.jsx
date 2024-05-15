@@ -30,7 +30,7 @@ const MainHero = ({
         <div className="content-container-wrapper">
           <div className="content-container fade-in">
             {/* Hero Section content Starts */}
-            <div className="hero-section-content">
+            <div className="hero-section-content" id="box">
               <h1 className="tagline slide-left">
                 {taglineJSX}
                 {taglineText}
@@ -48,7 +48,7 @@ const MainHero = ({
             </div>
             {/* Hero Section content Ends */}
 
-            <div className="hero-section-image">
+            <div className="hero-section-image" id="box">
               {/* Hero Section Image Starts */}
               <div className="hero-image">
                 <picture>
