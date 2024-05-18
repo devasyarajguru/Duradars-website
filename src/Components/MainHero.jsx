@@ -9,6 +9,10 @@ const MainHero = ({
   taglineJSX,
   taglineText,
   paragraph,
+  image,
+  smallImage,
+  mediumImage,
+  largeImage,
 }) => {
   const topRef = useRef();
   useEffect(() => {
@@ -35,7 +39,7 @@ const MainHero = ({
               {/* <Link to="/contact">
                 <button className="custom-button slide-left" style={{fontSize:"24px" , width: '200px', height: '50px', padding: '10px 20px'}}>Contact</button>
               </Link> */}
-              <div style={{marginTop:"1.5rem"}}>
+              <div className="btn-div" style={{marginTop:"1.5rem"}}>
               <Link to="/contact" className="custom-button slide-left" >
                 Contact
               </Link>
@@ -47,7 +51,7 @@ const MainHero = ({
             <div className="hero-section-image" id="box">
               {/* Hero Section Image Starts */}
               <div className="hero-image">
-                {/* <picture>
+                <picture>
                   <source
                     srcSet={`${smallImage} 1x, ${mediumImage} 1.5x, ${largeImage} 2x`}
                     sizes="(max-width: 540px) 90vw, (max-width: 768px) 80vw, (max-width:1200px) 70vw , 60vw"
@@ -60,7 +64,7 @@ const MainHero = ({
                     width={1200}
                     height={675}
                   />
-                </picture> */}
+                </picture>
               </div>
             </div>
             {/* Hero Section Image ends */}
