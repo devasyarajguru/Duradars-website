@@ -36,7 +36,7 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image , smallImage , medi
           <AboutSec />
         </div> */}
         {/* Responsive Container Starts*/}
-        <div className="responsive-container-block bigContainer">
+        <div className="responsive-container-block bigContainer" style={{ marginTop: "70px"}}>
       {sectionDetails.map((section, index) => (
         <Fade key={index} bottom distance="20%" duration={1000}>
           <div className={`responsive-container-block Container ${index === 1 ? 'bottomContainer' : ''}`}>

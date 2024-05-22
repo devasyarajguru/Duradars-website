@@ -8,7 +8,7 @@ const ContactSec = ({ formData, handleChange, handleSubmit, errors }) => {
     {/* Contact main Container starts */}
     <Fade  bottom distance="20%" duration={1000}>
 
-    <div className="formbold-main-wrapper">
+    <div className="formbold-main-wrapper" style={{ marginTop: "70px"}}>
   <div className="formbold-form-wrapper">
   <h2 className="contact-heading">Contact Us</h2>
     <form action='https://formspree.io/f/xvoekwrz' method="POST" onSubmit={handleSubmit}>

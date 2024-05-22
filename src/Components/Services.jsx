@@ -57,7 +57,7 @@ const Services = ({ taglineJSX, taglineText, paragraph, image, smallImage , medi
 
       {/* Responsive Container Starts*/}
       <Fade bottom distance="20%" duration={1000}>
-        <section id="responsive">
+        <section id="responsive" >
           <h2>Our Services</h2>
           <div className="row">
             {serviceDetails.map((service, index) => (
