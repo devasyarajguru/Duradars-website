@@ -376,105 +376,73 @@
   }
 }
 
-@media (min-width:1200px) and (max-width:2500px)
+@media (min-width:1200px) 
 { 
+  .main-home-container {
+    padding: 40px;
+  }
+
   .content-container {
-    margin-top: -50px;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    margin-top: -2rem;
+  }
+
+  .content-container-wrapper {
+    margin-top: 150px;
+    margin-bottom: 100px;
     width: 100%;
   }
 
   .hero-section-content {
-    width: 50%;
+    width: 45%;
     display: flex;
-    flex: 1;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
+    margin-top: 0;
   }
 
   .hero-section-image {
-    flex: 1;
-    width: 50%;
+    width: 55%;
     display: flex;
     justify-content: flex-end;
   }
 
-  /* .tagline {
-    margin-left: 3rem;
-    width: 100%;
-    max-width: 40rem;
+  .tagline {
     font-size: 4.5rem;
-    margin-bottom: 20px;
-    letter-spacing: 0.15rem;
+    line-height: 1.2em;
+    margin-bottom: 1.75rem;
+    width: 100%;
+    text-align: left;
   }
 
   .paragraph {
-    margin-left: 3rem;
     width: 100%;
-    max-width: 30rem;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-div {
+    margin-left: 0;
   }
 
   .custom-button {
-    margin-left: -1.75rem;
     width: 250px;
-    margin-top: 20px;
-  }
-
-  .hero-image
-  {
-    width: 50rem;
-    max-width: 100%;
+    margin-top: 2rem;
   }
 
   .svg-image {
     width: 100%;
     max-width: 50rem;
     height: auto;
-  } */
-
-  .hero-section-content,
-  .hero-section-image {
-    width: 100%;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 
-  .tagline {
-    font-size: 4.5rem;
-    width: 100%;
-    max-width: 50rem;
-    /* text-align: center; */
-  }
-
-  .paragraph {
-    font-size: 1.125rem;
-    width: 100%;
-    max-width: 50rem;
-    /* text-align: center; */
-  }
-
-  .custom-button {
-    width: 100%;
-    margin-top: 1rem;
-  }
-  .hero-section-image
-  {
-    margin-top: 2rem;
-    margin:0 auto;
-  }
-  .hero-image
-  {
+  .hero-image {
     width: 50rem;
-    max-width: 100%;
-  }
-  .svg-image {
-    width: 50rem;
-    margin-top: 1rem;
     max-width: 100%;
   }
 
