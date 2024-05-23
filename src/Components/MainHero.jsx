@@ -5,19 +5,29 @@ import { useEffect, useRef } from "react";
 // import { Helmet } from "react-helmet";
 // import LazyCritical from './LazyCritical'
 
+import { Cloudinary } from '@cloudinary/url-gen';
+import { auto } from '@cloudinary/url-gen/actions/resize';
+import { autoGravity } from '@cloudinary/url-gen/qualifiers/gravity';
+import { AdvancedImage } from '@cloudinary/react';
 const MainHero = ({
   taglineJSX,
   taglineText,
   paragraph,
   image,
-  smallImage,
-  mediumImage,
-  largeImage,
 }) => {
   const topRef = useRef();
   useEffect(() => {
     topRef.current.scrollIntoView({ behavior: "smooth" });
   }, []);
+
+  const cld = new Cloudinary({cloud:{
+    cloudName:'dgn53hdci'
+  }})
+
+  const publicId = image.match(/\/v\d+\/(.+)\.\w+$/)[1];
+
+  const cloudinaryImg = cld.image(publicId).format('auto').quality('auto').resize(auto().gravity(autoGravity()).width(1200).height(675));
+
   return (
     <>
       
@@ -51,20 +61,25 @@ const MainHero = ({
             <div className="hero-section-image" id="box">
               {/* Hero Section Image Starts */}
               <div className="hero-image">
-                <picture>
+                {/* <picture>
                   <source
-                    srcSet={`${smallImage} 1x, ${mediumImage} 1.5x, ${largeImage} 2x`}
                     sizes="(max-width: 540px) 90vw, (max-width: 768px) 80vw, (max-width:1200px) 70vw , 60vw"
                   />
-                  <img
+                  <AdvancedImage
+                    cldImg={cloudinaryImg}
                     fetchpriority="high"
-                    src={image}
-                    alt="Cyber-Image"
+                    alt="Cyber-Image349994"
                     className="svg-image slide-right"
                     width={1200}
                     height={675}
                   />
-                </picture>
+                </picture> */}
+                <AdvancedImage
+                cldImg={cloudinaryImg}
+                alt="Cyber-Image349994"
+                className="svg-image slide-right"
+              />
+
               </div>
             </div>
             {/* Hero Section Image ends */}
