@@ -9,6 +9,7 @@ import { Cloudinary } from '@cloudinary/url-gen';
 import { auto } from '@cloudinary/url-gen/actions/resize';
 import { autoGravity } from '@cloudinary/url-gen/qualifiers/gravity';
 import { AdvancedImage } from '@cloudinary/react';
+
 const MainHero = ({
   taglineJSX,
   taglineText,
@@ -26,12 +27,13 @@ const MainHero = ({
 
   const publicId = image.match(/\/v\d+\/(.+)\.\w+$/)[1];
 
-  const cloudinaryImg = cld.image(publicId).format('auto').quality('auto').resize(auto().gravity(autoGravity()).width(1200).height(675));
+  const cloudinaryImg = cld.image(publicId)
+                            .format('auto')
+                            .quality('auto')
+                            .resize(auto().gravity(autoGravity()).width(1200).height(800));
 
   return (
     <>
-      
-
       <section className="main-home-container" id="main-home-container">
         <div className="background-svg"></div>
         <div ref={topRef}></div>
@@ -76,7 +78,7 @@ const MainHero = ({
                 </picture> */}
                 <AdvancedImage
                 cldImg={cloudinaryImg}
-                alt="Cyber-Image349994"
+                alt="Cyber-Image"
                 className="svg-image slide-right"
               />
 
