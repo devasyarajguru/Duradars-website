@@ -29,7 +29,7 @@ const App = () => {
       taglineJSX: <span className="span-head">Securing</span>,
       taglineText: " your peace of mind, one click 👆 at a time",
       paragraph: "Welcome to Duradars, your trusted partner in cybersecurity. Explore our services and empower your online presence with confidence.",
-      image: "https://res.cloudinary.com/dgn53hdci/image/upload/v1716544889/Duradars/end-hero1_bxl36y.png",
+      image: "https://res.cloudinary.com/dgn53hdci/image/upload/v1716552679/Duradars/end-hero1_cjr8xv.png",
       // smallImage:SmallHero4,
       // mediumImage:MediumHero4,
       // largeImage:LargeHero4
@@ -39,7 +39,7 @@ const App = () => {
       taglineJSX: <span className="span-head">Empowering Security</span>,
       taglineText: " in a Connected World",
       paragraph: "At Duradars, we empower businesses and individuals to navigate the digital landscape securely. Trust us to safeguard your digital journey.",
-      image: "https://res.cloudinary.com/dgn53hdci/image/upload/v1716544891/Duradars/end-hero3_mgrcuc.png",
+      image: "https://res.cloudinary.com/dgn53hdci/image/upload/v1716552680/Duradars/end-hero3_ve4dqy.png",
       // smallImage:SmallHero2,
       // mediumImage:MediumHero2,
       // largeImage:LargeHero2
