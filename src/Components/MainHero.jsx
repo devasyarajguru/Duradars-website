@@ -5,9 +5,10 @@ import { useEffect, useRef } from "react";
 // import { Helmet } from "react-helmet";
 // import LazyCritical from './LazyCritical'
 
-import { Cloudinary } from '@cloudinary/url-gen';
-import { auto } from '@cloudinary/url-gen/actions/resize';
-import { autoGravity } from '@cloudinary/url-gen/qualifiers/gravity';
+import { Cloudinary } from '@cloudinary/url-gen'; // Importing from cloudinary
+// import { scale } from '@cloudinary/url-gen/actions/resize';
+// import { quality, autoBest } from '@cloudinary/url-gen/actions/delivery';
+// import { format, auto } from '@cloudinary/url-gen/actions/delivery';
 import { AdvancedImage } from '@cloudinary/react';
 
 const MainHero = ({
@@ -22,15 +23,13 @@ const MainHero = ({
   }, []);
 
   const cld = new Cloudinary({cloud:{
-    cloudName:'dgn53hdci'
+    cloudName:'dgn53hdci'   // cloud name
   }})
 
   const publicId = image.match(/\/v\d+\/(.+)\.\w+$/)[1];
 
   const cloudinaryImg = cld.image(publicId)
-                            .format('auto')
-                            .quality('auto')
-                            .resize(auto().gravity(autoGravity()).width(1200).height(800));
+
 
   return (
     <>
@@ -63,24 +62,25 @@ const MainHero = ({
             <div className="hero-section-image" id="box">
               {/* Hero Section Image Starts */}
               <div className="hero-image">
-                {/* <picture>
+                <picture>
                   <source
-                    sizes="(max-width: 540px) 90vw, (max-width: 768px) 80vw, (max-width:1200px) 70vw , 60vw"
+                    media="(max-width: 600px)"
+                    sizes="90vw"
+                  />
+                  <source
+                    media="(max-width: 768px)"
+                    sizes="80vw"
+                  />
+                  <source
+                    media="(max-width: 1200px)"
+                    sizes="70vw"
                   />
                   <AdvancedImage
                     cldImg={cloudinaryImg}
-                    fetchpriority="high"
-                    alt="Cyber-Image349994"
+                    alt="Cyber-Image"
                     className="svg-image slide-right"
-                    width={1200}
-                    height={675}
                   />
-                </picture> */}
-                <AdvancedImage
-                cldImg={cloudinaryImg}
-                alt="Cyber-Image"
-                className="svg-image slide-right"
-              />
+                </picture>
 
               </div>
             </div>
