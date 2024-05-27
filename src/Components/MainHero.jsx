@@ -26,7 +26,8 @@ const MainHero = ({
 
   const publicId = image.match(/\/v\d+\/(.+)\.\w+$/)[1];
 
-  const cloudinaryImg = cld.image(publicId).format('auto').delivery('q_auto');
+  const cloudinaryImg = cld.image(publicId).format('auto')
+                                          .delivery('q_auto')
   // .delivery(quality(autoBest()))
   // .delivery(format(autoFormat()));
 
@@ -64,15 +65,17 @@ const MainHero = ({
             <div className="hero-section-image" id="box">
               {/* Hero Section Image Starts */}
               <div className="hero-image">
-               
-                  <AdvancedImage
+               <picture>
+               <AdvancedImage
                     // src={cloudinaryImg.toURL()}
                     cldImg={cloudinaryImg}
+                    fetchpriority="high"
                     alt="Cyber-Image"
                     className="svg-image slide-right"
-                    width={800}
-                    height={500}
+                    width={1200}
+                    height={800}
                   />
+               </picture>
 
               </div>
             </div>
