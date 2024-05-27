@@ -24,7 +24,7 @@ const Process = lazy(() => import("./Components/Process"));
 
 const App = () => {
 
-  const siteProps = {
+  const siteProps = { 
     HomeSec: {
       taglineJSX: <span className="span-head">Securing</span>,
       taglineText: " your peace of mind, one click 👆 at a time",
