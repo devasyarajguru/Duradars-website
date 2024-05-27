@@ -5,9 +5,9 @@ import { useEffect, useRef } from "react";
 import { Cloudinary } from '@cloudinary/url-gen'; // Importing from cloudinary
 import { AdvancedImage } from '@cloudinary/react';
 // import { scale } from '@cloudinary/url-gen/actions/resize';
-import { quality , format} from "@cloudinary/url-gen/actions/delivery";
-import { autoBest } from "@cloudinary/url-gen/qualifiers/quality";
-import { auto as autoFormat } from '@cloudinary/url-gen/qualifiers/format';
+// import { quality , format} from "@cloudinary/url-gen/actions/delivery";
+// import { autoBest } from "@cloudinary/url-gen/qualifiers/quality";
+// import { auto as autoFormat } from '@cloudinary/url-gen/qualifiers/format';
 
 const MainHero = ({
   taglineJSX,
@@ -26,9 +26,9 @@ const MainHero = ({
 
   const publicId = image.match(/\/v\d+\/(.+)\.\w+$/)[1];
 
-  const cloudinaryImg = cld.image(publicId)
-  .delivery(quality(autoBest()))
-  .delivery(format(autoFormat()));
+  const cloudinaryImg = cld.image(publicId).format('auto').delivery('q_auto');
+  // .delivery(quality(autoBest()))
+  // .delivery(format(autoFormat()));
 
   // cloudinaryImg.setDeliveryType('fetch')
 
