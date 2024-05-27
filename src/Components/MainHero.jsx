@@ -2,14 +2,12 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
-// import { Helmet } from "react-helmet";
-// import LazyCritical from './LazyCritical'
-
 import { Cloudinary } from '@cloudinary/url-gen'; // Importing from cloudinary
-// import { scale } from '@cloudinary/url-gen/actions/resize';
-// import { quality, autoBest } from '@cloudinary/url-gen/actions/delivery';
-// import { format, auto } from '@cloudinary/url-gen/actions/delivery';
 import { AdvancedImage } from '@cloudinary/react';
+import { scale } from '@cloudinary/url-gen/actions/resize';
+import { quality , format} from "@cloudinary/url-gen/actions/delivery";
+import { autoBest } from "@cloudinary/url-gen/qualifiers/quality";
+import { auto as autoFormat } from '@cloudinary/url-gen/qualifiers/format';
 
 const MainHero = ({
   taglineJSX,
@@ -29,6 +27,9 @@ const MainHero = ({
   const publicId = image.match(/\/v\d+\/(.+)\.\w+$/)[1];
 
   const cloudinaryImg = cld.image(publicId)
+  .resize(scale().width(1000))
+  .delivery(quality(autoBest()))
+  .delivery(format(autoFormat()));
 
 
   return (
@@ -62,25 +63,14 @@ const MainHero = ({
             <div className="hero-section-image" id="box">
               {/* Hero Section Image Starts */}
               <div className="hero-image">
-                <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    sizes="90vw"
-                  />
-                  <source
-                    media="(max-width: 768px)"
-                    sizes="80vw"
-                  />
-                  <source
-                    media="(max-width: 1200px)"
-                    sizes="70vw"
-                  />
+               
                   <AdvancedImage
                     cldImg={cloudinaryImg}
                     alt="Cyber-Image"
                     className="svg-image slide-right"
+                    width={800}
+                    height={500}
                   />
-                </picture>
 
               </div>
             </div>
