@@ -72,8 +72,8 @@ const MainHero = ({
                     fetchpriority="high"
                     alt="Cyber-Image"
                     className="svg-image slide-right"
-                    width={1200}
-                    height={800}
+                    width={612}
+                    height={408}
                   />
                </picture>
 
