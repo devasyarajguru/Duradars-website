@@ -26,8 +26,8 @@ const AboutSec = () => {
             alt="About Image 1"
             loading="lazy"
             className='about1-image'
-            width={300}
-            height={200}
+            width={1200}
+            height={800}
         />
         </picture>
         
@@ -40,8 +40,8 @@ const AboutSec = () => {
             alt="About Image 2"
             loading="lazy"
             className='about2-image'
-            width={300}
-            height={200}
+            width={1200}
+            height={800}
           />
         </picture>
        
@@ -57,8 +57,8 @@ const AboutSec = () => {
             alt="About Image 3"
             loading="lazy"
             className="side-image"
-            width={300}
-            height={200}
+            width={1200}
+            height={800}
           />
         </picture>
       

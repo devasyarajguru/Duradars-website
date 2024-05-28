@@ -72,11 +72,12 @@ const ServiceSec = () => {
           {SecDetail.detail.map((service) =>(
             <div className="service-item" key={service.service}>
               <Link to="/services">
-
+                <picture>
+                  <source srcSet={`${service.smallImg} 300w, ${service.mediumImg} 600w, ${service.largeImg} 1200w`}
+                sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 60vw"/>
                 <img fetchpriority="low" src={service.img} alt="Services" loading="lazy" style={{width:"350px" , height:"200px"}}
-                srcSet={`${service.smallImg} 300w, ${service.mediumImg} 600w, ${service.largeImg} 1200w`}
-                sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 60vw"
                 />
+                </picture>
                 </Link>
                   <h2>{service.service}</h2>
               <Link to="/services#main-home-container" className="custom-button2">Learn More</Link>
