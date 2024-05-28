@@ -1,5 +1,5 @@
 // Navbar.js
-import { LargeCyber, MediumCyber, SmallCyber } from "../scripts/export";
+// import { LargeCyber, MediumCyber, SmallCyber } from "../scripts/export";
 import { Link } from "react-router-dom";
 import "../CSS/Navbar.css";
 import { useState } from "react";
@@ -13,32 +13,26 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const Logo2 ="https://res.cloudinary.com/dgn53hdci/image/upload/v1716877354/Duradars/image2_x5o4hd.webp"
+  const publicId = "Duradars/image2_x5o4hd"
 
   const cld = new Cloudinary({cloud:{
     cloudName:'dgn53hdci'   // cloud name
   }})
 
-  const cloudinaryLogo = cld.image(Logo2).format('webp').delivery('q_auto')
+  const cloudinaryLogo = cld.image(publicId).format('webp').delivery('q_auto')
 
   return (
     <nav className="navbar">
       <div className="logo-container">
         <Link to="/">
           <picture>
-            <source
+            {/* <source
               srcSet={`${SmallCyber} 300w, ${MediumCyber} 600w, ${LargeCyber} 1200w`}
               sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
-            />
-            {/* <img
-              src={Logo2}
-              alt="Logo"
-              className="logo"
-              width={500}
-              height={187}
             /> */}
             <AdvancedImage 
               cldImg={cloudinaryLogo}
+              fetchpriority="high"
               alt="Logo"
               className="logo"
               width={500}
