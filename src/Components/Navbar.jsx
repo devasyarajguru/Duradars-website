@@ -1,7 +1,5 @@
 // Navbar.js
-// import Logo2 from "../assets/images/image2.webp"
 import { LargeCyber, MediumCyber, SmallCyber } from "../scripts/export";
-import Logo2 from "../assets/images/image2.webp";
 import { Link } from "react-router-dom";
 import "../CSS/Navbar.css";
 import { useState } from "react";
@@ -12,6 +10,8 @@ const Navbar = () => {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+
+  const Logo2 ="https://res.cloudinary.com/dgn53hdci/image/upload/v1716877354/Duradars/image2_x5o4hd.webp"
   return (
     <nav className="navbar">
       <div className="logo-container">
