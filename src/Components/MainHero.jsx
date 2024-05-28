@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
 import { Cloudinary } from '@cloudinary/url-gen'; // Importing from cloudinary
 import { AdvancedImage } from '@cloudinary/react';
+import { scale } from "@cloudinary/url-gen/actions/resize";
 
 const MainHero = ({
   taglineJSX,
@@ -23,11 +24,14 @@ const MainHero = ({
   const publicId = image.match(/\/v\d+\/(.+)\.\w+$/)[1];
 
   const cloudinaryImg = cld.image(publicId).format('webp').delivery('q_auto')
-  // .delivery(quality(autoBest()))
-  // .delivery(format(autoFormat()));
+ 
+  const smallImg = cld.image(publicId).format('webp').delivery('q_auto').resize(scale().width(600).height(400));
+  const mediumImg = cld.image(publicId).format('webp').delivery('q_auto').resize(scale().width(1000).height(667));
+  const largeImg = cld.image(publicId).format('webp').delivery('q_auto').resize(scale().width(1200).height(800));
 
-  // cloudinaryImg.setDeliveryType('fetch')
-
+  // console.log(smallImg.toURL())
+  // console.log(mediumImg.toURL())
+  // console.log(largeImg.toURL())
 
   return (
     <>
@@ -58,6 +62,22 @@ const MainHero = ({
               {/* Hero Section Image Starts */}
               <div className="hero-image">
                <picture>
+                <source 
+                  // media="(max-width: 600px)"
+                  srcSet={smallImg.toURL()}
+                  sizes="(max-width: 600px) 90vw"
+                />
+                 <source
+                    // media="(max-width: 768px)"
+                    srcSet={mediumImg.toURL()}
+                    sizes="(max-width: 768px) 80vw"
+                  />
+                  <source
+                    // media="(max-width: 1200px)"
+                    srcSet={largeImg.toURL()}
+                    sizes="(max-width: 1200px) 70vw"
+                  />
+                
                <AdvancedImage
                     // src={cloudinaryImg.toURL()}
                     cldImg={cloudinaryImg}
