@@ -26,7 +26,7 @@ const MainHero = ({
 
   const publicId = image.match(/\/v\d+\/(.+)\.\w+$/)[1];
 
-  const cloudinaryImg = cld.image(publicId).format('auto')
+  const cloudinaryImg = cld.image(publicId).format('webp')
                                           .delivery('q_auto')
   // .delivery(quality(autoBest()))
   // .delivery(format(autoFormat()));
