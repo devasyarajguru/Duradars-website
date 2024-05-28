@@ -43,7 +43,7 @@ const MainHero = ({
         <div className="content-container-wrapper">
           <div className="content-container fade-in">
             {/* Hero Section content Starts */}
-            <div className="hero-section-content" id="box">
+            <div className="hero-section-content" id="box" fetchpriority="high">
               <h1 className="tagline slide-left">
                 {taglineJSX}
                 {taglineText}
