@@ -4,10 +4,6 @@ import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
 import { Cloudinary } from '@cloudinary/url-gen'; // Importing from cloudinary
 import { AdvancedImage } from '@cloudinary/react';
-// import { scale } from '@cloudinary/url-gen/actions/resize';
-// import { quality , format} from "@cloudinary/url-gen/actions/delivery";
-// import { autoBest } from "@cloudinary/url-gen/qualifiers/quality";
-// import { auto as autoFormat } from '@cloudinary/url-gen/qualifiers/format';
 
 const MainHero = ({
   taglineJSX,
@@ -26,8 +22,7 @@ const MainHero = ({
 
   const publicId = image.match(/\/v\d+\/(.+)\.\w+$/)[1];
 
-  const cloudinaryImg = cld.image(publicId).format('webp')
-                                          .delivery('q_auto')
+  const cloudinaryImg = cld.image(publicId).format('webp').delivery('q_auto')
   // .delivery(quality(autoBest()))
   // .delivery(format(autoFormat()));
 
@@ -50,9 +45,6 @@ const MainHero = ({
                 {taglineText}
               </h1>
               <p className="paragraph slide-left">{paragraph}</p>
-              {/* <Link to="/contact">
-                <button className="custom-button slide-left" style={{fontSize:"24px" , width: '200px', height: '50px', padding: '10px 20px'}}>Contact</button>
-              </Link> */}
               <div className="btn-div" style={{marginTop:"1.5rem"}}>
               <Link to="/contact" className="custom-button slide-left" >
                 Contact
