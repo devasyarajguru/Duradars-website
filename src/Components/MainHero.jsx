@@ -15,6 +15,16 @@ const MainHero = ({
   const topRef = useRef();
   useEffect(() => {
     topRef.current.scrollIntoView({ behavior: "smooth" });
+    // Logging the current image source on resize
+    // const img =  document.querySelector(".svg-image");
+    // const logImgSrc = () =>
+    //   {
+    //     console.log("Current Image source:",  img.currentSrc + "browser szie:" , window.innerWidth);
+    //   }
+
+    //   window.addEventListener("resize" , logImgSrc);
+    //   logImgSrc();
+
   }, []);
 
   const cld = new Cloudinary({cloud:{
@@ -28,10 +38,6 @@ const MainHero = ({
   const smallImg = cld.image(publicId).format('webp').delivery('q_auto').resize(scale().width(600).height(400));
   const mediumImg = cld.image(publicId).format('webp').delivery('q_auto').resize(scale().width(1000).height(667));
   const largeImg = cld.image(publicId).format('webp').delivery('q_auto').resize(scale().width(1200).height(800));
-
-  // console.log(smallImg.toURL())
-  // console.log(mediumImg.toURL())
-  // console.log(largeImg.toURL())
 
   return (
     <>
@@ -64,17 +70,17 @@ const MainHero = ({
                <picture>
                 <source 
                   // media="(max-width: 600px)"
-                  srcSet={smallImg.toURL()}
+                  srcSet={`${smallImg.toURL()} 1x`}
                   sizes="(max-width: 600px) 90vw"
                 />
-                 <source
+                <source
                     // media="(max-width: 768px)"
-                    srcSet={mediumImg.toURL()}
+                    srcSet={`${mediumImg.toURL()} 1.5x`}
                     sizes="(max-width: 768px) 80vw"
                   />
                   <source
                     // media="(max-width: 1200px)"
-                    srcSet={largeImg.toURL()}
+                    srcSet={`${largeImg.toURL()} 2x`}
                     sizes="(max-width: 1200px) 70vw"
                   />
                 
