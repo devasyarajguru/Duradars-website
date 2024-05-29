@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-/* @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap') format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap') format('woff2');
-  font-display: swap;
-} */
-
 *
 {
     margin: 0;
