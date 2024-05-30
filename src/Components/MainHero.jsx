@@ -38,14 +38,6 @@ const MainHero = ({
 
   const cloudinaryImg = cld.image(publicId).format('webp').delivery('q_auto')
 
-  // const smallImg = cld.image(publicId).format('webp').delivery('q_auto').resize(scale().width(600).height(400));
-  // const mediumImg = cld.image(publicId).format('webp').delivery('q_auto').resize(scale().width(1000).height(667));
-  // const largeImg = cld.image(publicId).format('webp').delivery('q_auto').resize(scale().width(1200).height(800));
-
-  // console.log(smallImg.toURL());
-  // console.log(mediumImg.toURL());
-  // console.log(largeImg.toURL());
-
   return (
     <>
       <section className="main-home-container" id="main-home-container">
