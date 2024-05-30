@@ -19,11 +19,18 @@
 
     <link rel="preload" href="https://res.cloudinary.com/dgn53hdci/image/upload/v1716877354/Duradars/image2_x5o4hd.webp" as="image">
 
-    <link rel = "preload" href = "/src/CSS/Home.css" type = "text / css" as = "style" onload = "this.onload = null; this.rel = 'stylesheet' ; "/>
+      <!-- Preload and load critical CSS -->
+      <link rel="preload" href="/src/CSS/Home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="/src/CSS/Home.css"></noscript>
+  
+      <link rel="preload" href="/src/CSS/Navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="/src/CSS/Navbar.css"></noscript>
+  
+      <!-- Preload and load font -->
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"></noscript>
+  
 
-    <link rel = "preload" href = "/src/CSS/Navbar.css" type = "text / css" as = "style" onload = "this.onload = null; this.rel = 'stylesheet' ; "/>
-
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" as="style" />
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
