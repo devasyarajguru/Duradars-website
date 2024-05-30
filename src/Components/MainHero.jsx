@@ -71,7 +71,7 @@ const MainHero = ({
             </div>
             {/* Hero Section content Ends */}
 
-            <div className="hero-section-image" id="box">
+            <div className="hero-section-image" id="box" fetchpriority="high">
               {/* Hero Section Image Starts */}
               <div className="hero-image">
                {/* <picture>
