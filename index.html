@@ -19,18 +19,30 @@
 
     <link rel="preload" href="https://res.cloudinary.com/dgn53hdci/image/upload/v1716877354/Duradars/image2_x5o4hd.webp" as="image">
 
-    <link rel="preload" href="/src/CSS/Home.css" as="style">
-    <link rel="preload" href="/src/CSS/Navbar.css" as="style">
+    <link rel = "preload" href = "/src/CSS/Home.css" type = "text / css" as = "style" onload = "this.onload = null; this.rel = 'stylesheet' ; "/>
+
+    <link rel = "preload" href = "/src/CSS/Navbar.css" type = "text / css" as = "style" onload = "this.onload = null; this.rel = 'stylesheet' ; "/>
 
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" as="style" />
 
-
-    <!-- <script>
-      for(let i = 0; i < 100000; i++)
-      {
-        console.log(i);
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
       }
-    </script> -->
+      html {
+          scroll-behavior: smooth;
+      }
+      body, html {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
+      }
+  </style>
 
   </head>
   <!-- <meta name="google-site-verification" content="DIvJiQ7U5Hlou5J77RqMwUm3ndDViPIlHgq3Koa6cO4" /> -->
