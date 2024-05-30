@@ -5,6 +5,8 @@ import "../CSS/Navbar.css";
 import { useState } from "react";
 import { Cloudinary } from '@cloudinary/url-gen'; // Importing from cloudinary
 import { AdvancedImage } from "@cloudinary/react";
+import { responsive } from '@cloudinary/react'
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +34,7 @@ const Navbar = () => {
             /> */}
             <AdvancedImage 
               cldImg={cloudinaryLogo}
+              plugins={[responsive({steps: [480, 768, 1024,1200]})]}
               fetchpriority="high"
               alt="Logo"
               className="logo"
