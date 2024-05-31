@@ -1,7 +1,8 @@
 // Footer.jsx
 import { Link } from 'react-router-dom';
-import {LargeCyber , MediumCyber , SmallCyber } from '../scripts/export';
-import Logo2 from "../assets/images/image2.webp"
+import { Cloudinary } from '@cloudinary/url-gen'; // Importing from cloudinary
+import { AdvancedImage } from "@cloudinary/react";
+import { responsive } from '@cloudinary/react'
 
 import '../CSS/Footer.css'
 import { MdEmail } from "react-icons/md";
@@ -9,6 +10,13 @@ import { FaPhone } from "react-icons/fa6";
 import { FaAddressCard } from "react-icons/fa";
 
 const Footer = () => {
+  const publicId = "Duradars/image2_x5o4hd"
+
+  const cld = new Cloudinary({cloud:{
+    cloudName:'dgn53hdci'   // cloud name
+  }})
+
+  const cloudinaryLogo = cld.image(publicId).format('webp').delivery('q_auto')
   return (
     <>
     {/* Footer Container */}
@@ -16,15 +24,16 @@ const Footer = () => {
 
     <div className="logo-container">
     <picture>
-          <source srcSet={`${SmallCyber} 300w, ${MediumCyber} 600w, ${LargeCyber} 1200w`}
-            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"/>
-        <img  
-            src={Logo2}
-            alt="Logo"
-            className="logo"
-            loading="lazy"
-            width={500}
-            height={187}
+          {/* <source srcSet={`${SmallCyber} 300w, ${MediumCyber} 600w, ${LargeCyber} 1200w`}
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"/> */}
+         <AdvancedImage 
+              cldImg={cloudinaryLogo}
+              plugins={[responsive({steps: [480, 768, 1024,1200]})]}
+              fetchpriority="high"
+              alt="Logo"
+              className="logo"
+              width={500}
+              height={187}
             />
         </picture>
         <p>At Duradars, we are dedicated to empowering businesses with robust cybersecurity solutions tailored to their unique needs. With a focus on innovation, reliability, and customer satisfaction, we strive to exceed expectations and deliver peace of mind in an ever-evolving digital landscape. </p>
