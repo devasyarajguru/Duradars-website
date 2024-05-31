@@ -1,18 +1,10 @@
 import "./App.css";
-// import { Helmet } from 'react-helmet';
 import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import NotFound from "./Components/NotFound";
-// import CyberImage from "./assets/images/my-hero1.webp";
-// import hero2 from "./assets/images/my-hero2.webp";
-// import hero3 from "./assets/images/my-hero3.webp";
-// import hero4 from "./assets/images/my-hero4.webp";
-// import hero5 from "./assets/images/my-hero5.webp";
-// import hero6 from "./assets/images/my-hero6.webp";
 import Spinner from "./Components/Spinner";
-// import { SmallHero , MediumHero , LargeHero , SmallHero2 , SmallHero3 , SmallHero4 , SmallHero5 , SmallHero6 , MediumHero2 , MediumHero3 , MediumHero4 , MediumHero5 , MediumHero6 , LargeHero2 , LargeHero3 , LargeHero4 , LargeHero5 , LargeHero6} from './scripts/export';
 
 const Home = lazy(() => import( "./Components/Home")) ;
 const Contact = lazy(() => import("./Components/Contact"));
@@ -88,12 +80,7 @@ const App = () => {
 
   return (
     <>
-    {/* <Helmet>
-      <link rel="preload" href={CyberImage} as='image'/>
-      <link rel="preload" href={SmallHero} as='image'/>
-      <link rel="preload" href={MediumHero} as='image'/>
-      <link rel="preload" href={LargeHero} as='image'/>
-    </Helmet> */}
+    
     <div id="main">
       <Navbar />
       <Suspense fallback={<Spinner />}>
