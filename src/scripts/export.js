@@ -38,38 +38,6 @@ export { default as LargeAbout1 } from "../assets/images/resized_images/about1-l
 export { default as LargeAbout2 } from "../assets/images/resized_images/about2-large.webp";
 export { default as LargeAbout3 } from "../assets/images/resized_images/about3-large.webp";
 
-// Logo
-export { default as SmallCyber } from "../assets/images/image2_small.webp";
-export { default as MediumCyber } from "../assets/images/image2_medium.webp";
-export { default as LargeCyber } from "../assets/images/image2_large.webp";
-
-
-// Hero Section
-export { default as SmallHero } from "../assets/images/resized_images/my-hero1-small.webp";
-export { default as MediumHero } from "../assets/images/resized_images/my-hero1-medium.webp";
-export { default as LargeHero } from "../assets/images/resized_images/my-hero1-large.webp";
-
-export { default as SmallHero2 } from "../assets/images/resized_images/my-hero2-small.webp";
-export { default as MediumHero2 } from "../assets/images/resized_images/my-hero2-medium.webp";
-export { default as LargeHero2 } from "../assets/images/resized_images/my-hero2-large.webp";
-
-export { default as SmallHero3 } from "../assets/images/resized_images/my-hero3-small.webp";
-export { default as MediumHero3 } from "../assets/images/resized_images/my-hero3-medium.webp";
-export { default as LargeHero3 } from "../assets/images/resized_images/my-hero3-large.webp";
-
-export { default as SmallHero4 } from "../assets/images/resized_images/my-hero4-small.webp";
-export { default as MediumHero4 } from "../assets/images/resized_images/my-hero4-medium.webp";
-export { default as LargeHero4 } from "../assets/images/resized_images/my-hero4-large.webp";
-
-export { default as SmallHero5 } from "../assets/images/resized_images/my-hero5-small.webp";
-export { default as MediumHero5 } from "../assets/images/resized_images/my-hero5-medium.webp";
-export { default as LargeHero5 } from "../assets/images/resized_images/my-hero5-large.webp";
-
-export { default as SmallHero6 } from "../assets/images/resized_images/my-hero6-small.webp";
-export { default as MediumHero6 } from "../assets/images/resized_images/my-hero6-medium.webp";
-export { default as LargeHero6 } from "../assets/images/resized_images/my-hero6-large.webp";
-
-
 
 // Process Page
 export { default as SmallProcess1 } from "../assets/images/resized_images/process1-small.webp";
