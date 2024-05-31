@@ -4,7 +4,7 @@ import '../App.css'
 import Fade from 'react-reveal/Fade';
 import { Service1, Service2, Service3, Service4, Service5, Service6 } from '../scripts/export';
 import { SmallService1, SmallService2,SmallService3,SmallService4,SmallService5,SmallService6, MediumService1,  MediumService2, MediumService3, MediumService4, MediumService5, MediumService6,LargeService1, LargeService2,LargeService3, LargeService4, LargeService5, LargeService6 } from '../scripts/export';
-// Repeat the same for other images...
+
 
 import { Link } from 'react-router-dom';
 
