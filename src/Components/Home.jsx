@@ -1,11 +1,13 @@
-import PropTypes from "prop-types";
-import AboutHome from './AboutSec';
-import ServiceSec from './ServiceSec';
-import Why from './Why';
-// import { Link } from 'react-router-dom';
+import { Suspense, lazy } from "react";
 import '../CSS/Home.css'
+import PropTypes from "prop-types";
 import MainHero from "./MainHero";
-import UseForm from "./UseFrom";
+import Spinner from './Spinner';
+
+const AboutHome = lazy(() => import('./AboutSec'));
+const ServiceSec = lazy(() => import('./ServiceSec'));
+const Why = lazy(() => import('./Why'));
+const UseForm = lazy(() => import('./UseForm'));
 
 
 const Home = ({taglineJSX, taglineText , paragraph , image, smallImage , mediumImage , largeImage}) =>
@@ -14,29 +16,42 @@ const Home = ({taglineJSX, taglineText , paragraph , image, smallImage , mediumI
       <>
         {/* MainHero Content Starts*/}
 
-        {MainHero({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage})}
+        {/* {MainHero({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage})} */}
+
+        <MainHero
+        taglineJSX={taglineJSX}
+        taglineText={taglineText}
+        paragraph={paragraph}
+        image={image}
+        smallImage={smallImage}
+        mediumImage={mediumImage}
+        largeImage={largeImage}
+      />
           
           {/* MainHero Content Ends*/}
 
-      <div className="mainSec-div">
-
-        <div style={{marginBottom:"50px", marginTop:"150px"}}>
+          <div className="mainSec-div">
+      <div style={{ marginBottom: "50px", marginTop: "150px" }}>
+        <Suspense fallback={<Spinner />}>
           <AboutHome />
-        </div>
-
-        <div style={{marginBottom:"50px", marginTop:"50px"}}>
-          <ServiceSec />
-        </div>
-
-        <div style={{marginBottom:"50px", marginTop:"50px"}}>
-          <Why />
-        </div>
-        
-        <div style={{marginTop:"50px"}}>
-          <UseForm />
-        </div>
-
+        </Suspense>
       </div>
+      <div style={{ marginBottom: "50px", marginTop: "50px" }}>
+        <Suspense fallback={<Spinner />}>
+          <ServiceSec />
+        </Suspense>
+      </div>
+      <div style={{ marginBottom: "50px", marginTop: "50px" }}>
+        <Suspense fallback={<Spinner />}>
+          <Why />
+        </Suspense>
+      </div>
+      <div style={{ marginTop: "50px" }}>
+        <Suspense fallback={<Spinner />}>
+          <UseForm />
+        </Suspense>
+      </div>
+    </div>
       </>
       )}
 

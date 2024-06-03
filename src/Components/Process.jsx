@@ -2,15 +2,18 @@ import PropTypes from "prop-types";
 // import WorkProcess from "../assets/work.png"
 import '../CSS/Process.css'
 import MainHero from "./MainHero";
-import Why from "./Why";
 import { Fade } from "react-reveal";
 import ProcessImage from "../assets/images/process1.webp"
 import ProcessImage2 from "../assets/images/process2.webp"
 import ProcessImage3 from "../assets/images/process3.webp"
 import ProcessImage4 from "../assets/images/process4.webp"
 import { SmallProcess1 , SmallProcess2 , SmallProcess3 , SmallProcess4 , MediumProcess1 , MediumProcess2 , MediumProcess3 , MediumProcess4 , LargeProcess1 , LargeProcess2 , LargeProcess3 , LargeProcess4 } from '../scripts/export';
-import UseForm from "./UseFrom";
 
+import { Suspense, lazy } from "react";
+import Spinner from "./Spinner";
+
+const Why = lazy(() => import("./Why"));
+const UseForm = lazy(() => import("./UseForm"));
 
 
 const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , mediumImage , largeImage}) =>
@@ -60,7 +63,15 @@ const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , medi
        <>
 
          {/* MainHero Content Starts*/}
-         {MainHero({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage})}
+         <MainHero
+        taglineJSX={taglineJSX}
+        taglineText={taglineText}
+        paragraph={paragraph}
+        image={image}
+        smallImage={smallImage}
+        mediumImage={mediumImage}
+        largeImage={largeImage}
+      />
          {/* MainHero Content Ends*/}
 
         {/* Main Process container starts */}
@@ -90,12 +101,17 @@ const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , medi
       
         {/* Main Process container Ends */}
           
+        
         <div style={{marginTop:"50px"}}>
-          <Why/>
+       <Suspense fallback={<Spinner />}>
+            <Why />
+          </Suspense>
         </div>
 
-        <div style={{marginTop:"50px"}}>
-          <UseForm />
+        <div style={{ marginTop:"50px"}}>
+        <Suspense fallback={<Spinner />}>
+            <UseForm />
+          </Suspense>
         </div>
      </>
     )

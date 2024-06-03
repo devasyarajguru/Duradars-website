@@ -1,7 +1,7 @@
 import MainHero from "./MainHero";
 import '../CSS/Contact.css';
 import PropTypes from "prop-types";
-import UseForm from "./UseFrom";
+import UseForm from "./UseForm";
 
 function Contact({taglineJSX, taglineText , paragraph , image, smallImage , mediumImage , largeImage}) {
    

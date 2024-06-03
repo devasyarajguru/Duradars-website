@@ -1,11 +1,14 @@
 import PropTypes from "prop-types";
 import '../CSS/Home.css'
 import '../CSS/About.css'
+import { Suspense, lazy } from "react";
 import { Fade } from "react-reveal";
 import MainHero from "./MainHero";
-// import AboutSec from "./AboutSec";
-import Why from "./Why";
-import UseForm from "./UseFrom";
+import Spinner from './Spinner';
+
+const Why = lazy(() => import("./Why"));
+const UseForm = lazy(() => import("./UseForm"));
+
 
 const AboutUs = ({ taglineJSX, taglineText, paragraph, image , smallImage , mediumImage , largeImage}) =>
 {
@@ -28,7 +31,15 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image , smallImage , medi
        <>
           {/* MainHero Content Starts*/}
 
-          {MainHero({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage})}
+          <MainHero
+        taglineJSX={taglineJSX}
+        taglineText={taglineText}
+        paragraph={paragraph}
+        image={image}
+        smallImage={smallImage}
+        mediumImage={mediumImage}
+        largeImage={largeImage}
+      />
           
           {/* MainHero Content Ends*/}
 
@@ -51,11 +62,15 @@ const AboutUs = ({ taglineJSX, taglineText, paragraph, image , smallImage , medi
         <div className="mainSec-div">
 
        <div style={{marginTop:"50px"}}>
-          <Why />
+       <Suspense fallback={<Spinner />}>
+            <Why />
+          </Suspense>
         </div>
 
         <div style={{ marginTop:"50px"}}>
-          <UseForm />
+        <Suspense fallback={<Spinner />}>
+            <UseForm />
+          </Suspense>
         </div>
 
        </div>

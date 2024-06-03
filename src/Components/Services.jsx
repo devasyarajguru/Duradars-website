@@ -4,9 +4,11 @@ import "../CSS/Services.css";
 import { Fade } from "react-reveal";
 import { MdSecurity } from "react-icons/md";
 import MainHero from "./MainHero";
-import Why from "./Why";
-import UseForm from "./UseFrom";
+import { Suspense, lazy } from "react";
+import Spinner from "./Spinner";
 
+const Why = lazy(() => import("./Why"));
+const UseForm = lazy(() => import("./UseForm"));
 
 const Services = ({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage }) => {
  
@@ -52,7 +54,15 @@ const Services = ({ taglineJSX, taglineText, paragraph, image, smallImage , medi
   return (
     <>
       {/* MainHero Content Starts*/}
-      {MainHero({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage})}
+      <MainHero
+        taglineJSX={taglineJSX}
+        taglineText={taglineText}
+        paragraph={paragraph}
+        image={image}
+        smallImage={smallImage}
+        mediumImage={mediumImage}
+        largeImage={largeImage}
+      />
       {/* MainHero Content Ends*/}
 
       {/* Responsive Container Starts*/}
@@ -75,13 +85,18 @@ const Services = ({ taglineJSX, taglineText, paragraph, image, smallImage , medi
       {/* Responsive Container Ends*/}
 
       <div className="mainSec-div">
-        <div style={{ marginBottom: "50px", marginTop: "50px" }}>
-          <Why />
+      <div style={{ marginBottom: "50px", marginTop: "50px" }}>
+          <Suspense fallback={<Spinner />}>
+            <Why />
+          </Suspense>
         </div>
 
         <div style={{ marginTop: "50px" }}>
-          <UseForm />
+          <Suspense fallback={<Spinner />}>
+            <UseForm />
+          </Suspense>
         </div>
+
       </div>
 
     </>

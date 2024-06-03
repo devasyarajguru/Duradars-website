@@ -106,8 +106,9 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         {/* <Route path="/aboutus" element={<ServiceSec />} /> */}
       </Routes>
-      <Footer />
       </Suspense>
+      <Footer />
+     
     </div>
     </>
   );
