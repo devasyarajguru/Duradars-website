@@ -80,7 +80,7 @@ const ServiceSec = () => {
                 </picture>
                 </Link>
                   <h2>{service.service}</h2>
-              <Link to={`/services/${service.service.toLowerCase().replace(/\s+/g, '-')}`} className="custom-button2">Learn More About {service.service}</Link>
+              <Link to={`/services/${service.service.toLowerCase().replace(/\s+/g, '-')}`} className="custom-button2">About {service.service}</Link>
             </div>
           ))}
       </div>
