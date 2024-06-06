@@ -54,7 +54,7 @@ const MainHero = ({
                 {taglineText}
               </h1>
               <p className="paragraph slide-left">{paragraph}</p>
-              <div className="btn-div" style={{marginTop:"1.5rem"}}>
+              <div className="btn-div" style={{marginTop:"1.5rem",marginBottom:"2.5rem"}}>
               <Link to="/contact" className="custom-button slide-left" >
                 Contact
               </Link>
@@ -66,23 +66,7 @@ const MainHero = ({
             <div className="hero-section-image" id="box" fetchpriority="high">
               {/* Hero Section Image Starts */}
               <div className="hero-image">
-               {/* <picture>
-                <source 
-                  // media="(max-width: 600px)"
-                  srcSet={`${smallImg.toURL()} 1x`}
-                  sizes="(max-width: 600px) 90vw"
-                  />
-                <source
-                    // media="(max-width: 768px)"
-                    srcSet={`${mediumImg.toURL()} 1.5x`}
-                    sizes="(max-width: 768px) 80vw"
-                    />
-                  <source
-                    // media="(max-width: 1200px)"
-                    srcSet={`${largeImg.toURL()} 2x`}
-                    sizes="(max-width: 1200px) 70vw"
-                  />
-               </picture> */}
+               
                 
                <AdvancedImage
                     // src={cloudinaryImg.toURL()}
