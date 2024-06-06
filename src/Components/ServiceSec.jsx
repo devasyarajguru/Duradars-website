@@ -71,16 +71,16 @@ const ServiceSec = () => {
        
           {SecDetail.detail.map((service) =>(
             <div className="service-item" key={service.service}>
-              <Link to="/services">
+              <Link to={`/services/${service.service.toLowerCase().replace(/\s+/g, '-')}`}>
                 <picture>
                   <source srcSet={`${service.smallImg} 300w, ${service.mediumImg} 600w, ${service.largeImg} 1200w`}
                 sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 60vw"/>
-                <img fetchpriority="low" src={service.img} alt="Services" loading="lazy" style={{width:"350px" , height:"200px"}}
+                <img fetchpriority="low" src={service.img}  alt={`${service.service}`} loading="lazy" style={{width:"350px" , height:"200px"}}
                 />
                 </picture>
                 </Link>
                   <h2>{service.service}</h2>
-              <Link to="/services" className="custom-button2">Learn More</Link>
+              <Link to={`/services/${service.service.toLowerCase().replace(/\s+/g, '-')}`} className="custom-button2">Learn More</Link>
             </div>
           ))}
       </div>
