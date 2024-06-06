@@ -71,7 +71,7 @@ const ServiceSec = () => {
        
           {SecDetail.detail.map((service) =>(
             <div className="service-item" key={service.service}>
-              <Link to={`/services/${service.service.toLowerCase().replace(/\s+/g, '-')}`}>
+              <Link to="/services">
                 <picture>
                   <source srcSet={`${service.smallImg} 300w, ${service.mediumImg} 600w, ${service.largeImg} 1200w`}
                 sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 60vw"/>
@@ -80,7 +80,7 @@ const ServiceSec = () => {
                 </picture>
                 </Link>
                   <h2>{service.service}</h2>
-              <Link to={`/services/${service.service.toLowerCase().replace(/\s+/g, '-')}`} className="custom-button2">About {service.service}</Link>
+              <Link to="/services" className="custom-button2">About {service.service}</Link>
             </div>
           ))}
       </div>
