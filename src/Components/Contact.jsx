@@ -13,7 +13,9 @@ function Contact({taglineJSX, taglineText , paragraph , image, smallImage , medi
           
     {/* MainHero Content Ends*/}
      
+     <div style={{marginTop:"-80px"}}>
    <UseForm />
+   </div>
     </>
   );
 }
