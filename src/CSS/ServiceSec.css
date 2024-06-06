@@ -89,6 +89,11 @@
   
 
   @media (max-width: 768px) {
+    .custom-button2 {
+      padding: 8px 16px;
+      font-size: 14px;
+      margin:0 auto;
+    }
     .service-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
         gap: 10px; 
