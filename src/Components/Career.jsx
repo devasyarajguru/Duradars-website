@@ -15,7 +15,7 @@ const Career = ({taglineJSX, taglineText , paragraph , image, smallImage , mediu
           {MainHero({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage})}
           {/* MainHero Content Ends*/}     
 
-          <div className="no-openings-message">
+          <div className="no-openings-message" style={{marginTop:"-5px"}}>
                 <p>{message}</p>
                 <Link to="/">
                 <button className="custom-button">Home</button>
