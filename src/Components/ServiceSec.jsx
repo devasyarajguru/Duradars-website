@@ -80,7 +80,7 @@ const ServiceSec = () => {
                 </picture>
                 </Link>
                   <h2>{service.service}</h2>
-              <Link to="/services#main-home-container" className="custom-button2">Learn More</Link>
+              <Link to="/services" className="custom-button2">Learn More</Link>
             </div>
           ))}
       </div>
