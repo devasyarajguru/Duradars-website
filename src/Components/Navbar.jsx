@@ -15,6 +15,11 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleCloseMenu = () =>
+    {
+      setIsOpen(false);
+    }
+
   const publicId = "Duradars/image2_x5o4hd"
 
   const cld = new Cloudinary({cloud:{
@@ -55,23 +60,23 @@ const Navbar = () => {
       </div>
 
       <ul className={`nav-list ${isOpen ? "active" : ""}`}>
-        <li>
-          <Link to="/">Home</Link>
+      <li>
+          <Link to="/" onClick={handleCloseMenu}>Home</Link>
         </li>
         <li>
-          <Link to="/services">Services</Link>
+          <Link to="/services" onClick={handleCloseMenu}>Services</Link>
         </li>
         <li>
-          <Link to="/aboutus">About Us</Link>
+          <Link to="/aboutus" onClick={handleCloseMenu}>About Us</Link>
         </li>
         <li>
-          <Link to="/process">Process</Link>
+          <Link to="/process" onClick={handleCloseMenu}>Process</Link>
         </li>
         <li>
-          <Link to="/career">Career</Link>
+          <Link to="/career" onClick={handleCloseMenu}>Career</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" onClick={handleCloseMenu}>Contact</Link>
         </li>
         {/* Render hamburger icon based on isOpen state */}
       </ul>
