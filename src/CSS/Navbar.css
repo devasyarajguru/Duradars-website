@@ -85,7 +85,6 @@
 
 @media (max-width: 568px) {
   .nav-list li a{
-    font-size:12px;
     min-width: 50px;
   }
 
@@ -96,6 +95,15 @@
   .navbar {
    width:100%;
 }
+}
+
+@media (max-width:1200px)
+{
+  .nav-list li
+  {
+    font-size: 1rem;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 1200px) {
