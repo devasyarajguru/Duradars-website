@@ -20,8 +20,8 @@ const Career = ({taglineJSX, taglineText , paragraph , image, smallImage , mediu
                 <Link to="/">
                 <button className="custom-button">Home</button>
                 </Link>
-          </div>  
-          
+          </div> 
+            
         </>
       )}
 
