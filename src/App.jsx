@@ -38,7 +38,7 @@ const App = () => {
     },
 
     ServiceSec: {
-      taglineJSX: <span className="span-head">Comprehensive Security</span>,
+      taglineJSX: <span className="span-head">Broad Security</span>,
       taglineText: " Solutions for Every Need",
       paragraph: "Duradars offers a wide range of security services tailored to meet your needs. Explore our services and take the first step towards a secure future.",
       image: "https://res.cloudinary.com/dgn53hdci/image/upload/v1716545648/Duradars/last-hero4_n2ahot.png",
