@@ -2,7 +2,10 @@ import PropTypes from "prop-types";
 import Fade from 'react-reveal/Fade';
 import '../CSS/Contact.css';
 
-const ContactSec = ({ formData, handleChange, handleSubmit, errors }) => {
+const ContactSec = ({ formData = {},
+  handleChange = () => {},
+  handleSubmit = () => {},
+  errors = {}, }) => {
   return (
     <>
     {/* Contact main Container starts */}
@@ -72,13 +75,6 @@ ContactSec.propTypes = {
     handleChange: PropTypes.func.isRequired, // Function to handle input change
     handleSubmit: PropTypes.func.isRequired, // Function to handle form submission
     errors: PropTypes.object.isRequired, // Object containing form validation errors
-  };
-
-  ContactSec.defaultProps = {
-    formData:{},
-    handleChange:() => {},
-    handleSubmit:() => {},
-    errors:{},
   };
 
 export default ContactSec;
