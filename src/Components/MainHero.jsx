@@ -1,34 +1,27 @@
-// Helper function for rendering the main home container
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef} from "react";
 import { Cloudinary } from '@cloudinary/url-gen'; // Importing from cloudinary
 import { AdvancedImage } from '@cloudinary/react';
 import { responsive } from '@cloudinary/react'
-// import { scale } from "@cloudinary/url-gen/actions/resize";
+import { ScrollContext } from "./ScrollContext";
 
 const MainHero = ({
-  taglineJSX,
-  taglineText,
-  paragraph,
-  image,
+  taglineJSX = "",
+  taglineText = "",
+  paragraph = "",
+  image = "",
 }) => {
-  const topRef = useRef();
+  const topRef = useRef(null);
+  const {scrollToTop, setScrollToTop} = useContext(ScrollContext);
   useEffect(() => {
-    topRef.current.scrollIntoView({ behavior: "smooth" });
-    // Logging the current image source on resize
-    const img =  document.querySelector(".svg-image");
-    const logImgSrc = () =>
+    if(scrollToTop)
       {
-        console.log("Current Image source:",  img.currentSrc + "browser szie:" , window.innerWidth);
+        topRef.current.scrollIntoView({ behavior: "smooth" });
+        setScrollToTop(false);
       }
-
-      window.addEventListener("resize" , logImgSrc);
-      logImgSrc();
-
-      return () => window.removeEventListener("resize", logImgSrc);
-
-  }, []);
+        
+  }, [scrollToTop,setScrollToTop]);
 
   const cld = new Cloudinary({cloud:{
     cloudName:'dgn53hdci'   // cloud name
@@ -89,23 +82,13 @@ const MainHero = ({
     </>
   );
 };
-MainHero.defaultProps = {
-  taglineJSX: null,
-  taglineText: "",
-  paragraph: "",
-  image: "",
-  smallImage: "",
-  mediumImage: "",
-  largeImage: "",
-};
+
 
 MainHero.propTypes = {
   taglineJSX: PropTypes.node,
   taglineText: PropTypes.string.isRequired,
   paragraph: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  smallImage: PropTypes.string.isRequired,
-  mediumImage: PropTypes.string.isRequired,
-  largeImage: PropTypes.string.isRequired,
+  scrollToTop:PropTypes.bool
 };
 export default MainHero;

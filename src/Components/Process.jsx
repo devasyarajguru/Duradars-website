@@ -16,7 +16,13 @@ const Why = lazy(() => import("./Why"));
 const UseForm = lazy(() => import("./UseForm"));
 
 
-const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , mediumImage , largeImage}) =>
+const Process = ({taglineJSX= null,
+  taglineText= "",
+  paragraph= "",
+  image= "",
+  smallImage="",
+  mediumImage="",
+  largeImage=""}) =>
 {
       const processes = [
         {
@@ -115,18 +121,7 @@ const Process = ({taglineJSX, taglineText , paragraph , image, smallImage , medi
         </div>
      </>
     )
-}
-
-Process.defaultProps = {
-    taglineJSX: null,
-    taglineText: "",
-    paragraph: "",
-    image: "",
-    smallImage:"",
-    mediumImage:"",
-    largeImage:""
-  };
-  
+}  
   Process.propTypes = {
     taglineJSX: PropTypes.node,
     taglineText: PropTypes.string.isRequired,

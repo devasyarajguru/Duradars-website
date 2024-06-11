@@ -10,7 +10,13 @@ import Spinner from "./Spinner";
 const Why = lazy(() => import("./Why"));
 const UseForm = lazy(() => import("./UseForm"));
 
-const Services = ({ taglineJSX, taglineText, paragraph, image, smallImage , mediumImage , largeImage }) => {
+const Services = ({ taglineJSX= "",
+  taglineText= "",
+  paragraph= "",
+  image= "",
+  smallImage="",
+  mediumImage="",
+  largeImage="" }) => {
  
   const serviceDetails = [
     {
@@ -101,16 +107,6 @@ const Services = ({ taglineJSX, taglineText, paragraph, image, smallImage , medi
 
     </>
   );
-};
-
-Services.defaultProps = {
-  taglineJSX: null,
-  taglineText: "",
-  paragraph: "",
-  image: "",
-  smallImage:"",
-  mediumImage:"",
-  largeImage:""
 };
 
 Services.propTypes = {

@@ -10,7 +10,11 @@ const Why = lazy(() => import('./Why'));
 const UseForm = lazy(() => import('./UseForm'));
 
 
-const Home = ({taglineJSX, taglineText , paragraph , image, smallImage , mediumImage , largeImage}) =>
+const Home = ({taglineJSX= null,
+  taglineText= "",
+  paragraph= "",
+  image= "",
+}) =>
 {
     return(
       <>
@@ -23,9 +27,6 @@ const Home = ({taglineJSX, taglineText , paragraph , image, smallImage , mediumI
         taglineText={taglineText}
         paragraph={paragraph}
         image={image}
-        smallImage={smallImage}
-        mediumImage={mediumImage}
-        largeImage={largeImage}
       />
           
           {/* MainHero Content Ends*/}
@@ -54,25 +55,12 @@ const Home = ({taglineJSX, taglineText , paragraph , image, smallImage , mediumI
     </div>
       </>
       )}
-
-      Home.defaultProps = {
-        taglineJSX: null,
-        taglineText: "",
-        paragraph: "",
-        image: "",
-        smallImage:"",
-        mediumImage:"",
-        largeImage:""
-      };
-      
+ 
       Home.propTypes = {
         taglineJSX: PropTypes.node,
         taglineText: PropTypes.string.isRequired,
         paragraph: PropTypes.string.isRequired,
         image: PropTypes.string.isRequired,
-        smallImage: PropTypes.string.isRequired,
-        mediumImage: PropTypes.string.isRequired,
-        largeImage: PropTypes.string.isRequired,
       };
 
 export default Home;
