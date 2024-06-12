@@ -7,6 +7,7 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import { Fade } from "react-reveal";
 
 const Why = () => {
+
   const WhyDetails = {
     mainTitle: "Why Choose Us?",
     items: [
