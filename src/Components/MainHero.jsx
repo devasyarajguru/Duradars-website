@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import { useContext, useEffect, useRef} from "react";
+import { useEffect, useRef} from "react";
 import { Cloudinary } from '@cloudinary/url-gen'; // Importing from cloudinary
 import { AdvancedImage } from '@cloudinary/react';
 import { responsive } from '@cloudinary/react'
-import { ScrollContext } from "./ScrollContext";
 
 const MainHero = ({
   taglineJSX = "",
@@ -12,16 +11,12 @@ const MainHero = ({
   paragraph = "",
   image = "",
 }) => {
-  const topRef = useRef(null);
-  const {scrollToTop, setScrollToTop} = useContext(ScrollContext);
+  const topRef = useRef();
+  
   useEffect(() => {
-    if(scrollToTop)
-      {
         topRef.current.scrollIntoView({ behavior: "smooth" });
-        setScrollToTop(false);
-      }
         
-  }, [scrollToTop,setScrollToTop]);
+  }, []);
 
   const cld = new Cloudinary({cloud:{
     cloudName:'dgn53hdci'   // cloud name
