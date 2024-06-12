@@ -1,6 +1,3 @@
-// NotFound.js
-import '../CSS/Career.css'
-
 const NotFound = () => {
   return (
     <div>
