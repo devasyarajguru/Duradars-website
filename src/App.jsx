@@ -103,8 +103,7 @@ const App = () => {
             path="/process"
             element={<Process {...siteProps.ProcessSec} />}
           />
-          <Route path="*" element={<NotFound />} />
-        {/* <Route path="/aboutus" element={<ServiceSec />} /> */}
+          <Route path="*" element={<NotFound />}/>
       </Routes>
       <Footer />
       </Suspense>
