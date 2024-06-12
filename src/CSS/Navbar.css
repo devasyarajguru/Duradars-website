@@ -6,9 +6,11 @@
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     position: fixed;
     width: 100%;
-    margin-right: 57px;
     box-sizing: border-box;
     z-index: 10;
+    top: 0;
+    left: 0;
+    padding: 0 15px;
   }
   
   .nav-list {
