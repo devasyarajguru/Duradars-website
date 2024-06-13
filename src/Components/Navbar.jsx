@@ -33,10 +33,6 @@ const Navbar = () => {
       <div className="logo-container">
         <Link to="/">
           <picture>
-            {/* <source
-              srcSet={`${SmallCyber} 300w, ${MediumCyber} 600w, ${LargeCyber} 1200w`}
-              sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 30vw"
-            /> */}
             <AdvancedImage 
               cldImg={cloudinaryLogo}
               plugins={[responsive({steps: [480, 768, 1024,1200]})]}
