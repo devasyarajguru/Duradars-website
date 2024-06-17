@@ -4,8 +4,8 @@
 
  ## Table of Contents
 1. [About](#about)
-2.  [Features](#KeyFeatures)
-3.  [Services](#services)
+2.  [Features](##keyfeatures)
+3.  [Services](#servicessection)
 4. [Installation](#installation)
 
 <br>
@@ -17,8 +17,6 @@
 ## About
 
 🚀 The **Cyber Security Website** is designed to provide comprehensive cybersecurity solutions to individuals and businesses. Our mission is to safeguard digital assets and ensure the safety and tranquility of our clients.✨
-
-### About Us
 
 #### 🌟 Our Mission
 
