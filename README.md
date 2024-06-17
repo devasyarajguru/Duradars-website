@@ -4,8 +4,8 @@
 
  ## Table of Contents
 1. [About](#about)
-2.  [Features](##keyfeatures)
-3.  [Services](#servicessection)
+2. [Features](#key-features)   <!-- Corrected anchor -->
+3. [Services](#services)        <!-- Corrected anchor -->
 4. [Installation](#installation)
 
 <br>
