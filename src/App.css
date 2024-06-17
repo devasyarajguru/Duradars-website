@@ -36,11 +36,6 @@ section
   color:#b3245c;
 }
 
-::-webkit-scrollbar {
-  width: 16px;
-  height: 16px;
-}
-
 ::-webkit-scrollbar-track {
   background: #ffffff; /* Color of the scrollbar track */
   margin-top: 90px;
