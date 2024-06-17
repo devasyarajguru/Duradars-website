@@ -2,14 +2,6 @@
 
 ## Live Link - https://duradars.com/
 
- ## Table of Contents
-1. [About](#about)
-2. [Features](#key-features)   <!-- Corrected anchor -->
-3. [Services](#services)        <!-- Corrected anchor -->
-4. [Installation](#installation)
-
-<br>
-
 <img width="960" alt="1" src="https://github.com/devasyarajguru/Duradars-website/assets/84851506/22d5edb2-7d74-42a7-9552-808bf2fb7841">
 
 <br>
