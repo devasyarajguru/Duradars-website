@@ -8,7 +8,7 @@
 
 ## About
 
-🚀 The **Cyber Security Website** is designed to provide comprehensive cybersecurity solutions to individuals and businesses. Our mission is to safeguard digital assets and ensure the safety and tranquility of our clients.✨
+🚀 **Duradars** is designed to provide comprehensive cybersecurity solutions to individuals and businesses. Our mission is to safeguard digital assets and ensure the safety and tranquility of our clients.✨
 
 #### 🌟 Our Mission
 
