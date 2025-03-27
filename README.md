@@ -1,6 +1,6 @@
 # 🔒  Duradars (Freelance Project)
 
-## Live Link - https://duradars.com/
+## Live Link - https://duradars.vercel.app/
 
 <img width="960" alt="1" src="https://github.com/devasyarajguru/Duradars-website/assets/84851506/22d5edb2-7d74-42a7-9552-808bf2fb7841">
 
